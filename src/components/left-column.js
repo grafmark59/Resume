@@ -4,7 +4,7 @@ export default ({ children }) =>
   <div
     style={
       {
-        flex: '0 0 33%',
+        flex: '0 0 36%',
         backgroundColor: 'rgb(255, 255, 255)'
       }
     }>

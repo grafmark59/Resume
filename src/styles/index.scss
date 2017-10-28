@@ -3,6 +3,7 @@
 }
 
 .mainName {
+  margin-bottom: 7px;
   span {
     display: inline-block;
     &::first-letter  {
@@ -22,8 +23,12 @@ h2 { // Section Titles
 
 h3 { // Subtitle
   font-size: 12pt;
+  color: #000000;
   span { // Contact Info
     color: #7F7F7F;
+    br {
+      line-height: 150%;
+    }
   }
 }
 
@@ -31,7 +36,7 @@ h4 { // Section Header
   font-size: 11pt;
   color: #000000;
   span {
-    font-weight: bold;
+    font-weight: 900;
   }
 }
 
@@ -45,6 +50,20 @@ p { // Main Info
   color: #595959;
 }
 
-.subtitle {
+.left {
+  width: 100%;
+  text-align: left;
+  vertical-align: middle;
+}
 
+.center {
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.right {
+  width: 100%;
+  text-align: right;
+  vertical-align: middle;
 }
