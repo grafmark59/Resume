@@ -87,12 +87,18 @@ export default () =>
       <RightColumn>
         <h2>Work Experience</h2>
         <h4><span>Tech. Consultant</span> • Palauan Ministry of Education • Summer ‘17</h4>
-        <p>
-          -	Evaluated the paper-based Teacher Evaluation System <br/>
-          -	Developed a full-stack Ruby on Rails solution with a MySQL database <br/>
-          -	Implemented a system with log-in functionality for all staff to be able to <br/>
+        <ul className='dashed'>
+          <li>
+            -	Evaluated the paper-based Teacher Evaluation System
+          </li>
+          <li>
+            -	Developed a full-stack Ruby on Rails solution with a MySQL database
+          </li>
+          <li>
+            -	Implemented a system with log-in functionality for all staff to be able to
             go online and see their respective evaluations
-        </p>
+          </li>
+        </ul>
         <h4><span>Teaching Assistant </span> • App Design and Development • Spring ‘17</h4>
         <p>
           -	Worked as a TA for 67-272, the first major Information Systems course in <br/>

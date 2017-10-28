@@ -18,6 +18,7 @@ h1 { // Main Name
 
 h2 { // Section Titles
   font-size: 14pt;
+  margin-bottom: 7px;
   color: #008AFF;
 }
 
@@ -34,6 +35,7 @@ h3 { // Subtitle
 
 h4 { // Section Header
   font-size: 11pt;
+  margin-bottom: 7px;
   color: #000000;
   span {
     font-weight: 900;
@@ -41,13 +43,34 @@ h4 { // Section Header
 }
 
 h5 {
+  line-height: 1.15;
   font-size: 10pt;
   color: #000000;
 }
 
 p { // Main Info
+  line-height: 1;
+  margin-bottom: 7px;
   font-size: 10pt;
   color: #595959;
+}
+
+ul {
+  margin: 0;
+  line-height: 1;
+  margin-bottom: 7px;
+  font-size: 10pt;
+  color: #595959;
+}
+ul.dashed {
+  list-style-type: none;
+}
+ul.dashed > li {
+  // text-indent: -5px;
+}
+ul.dashed > li:before {
+  content: "-";
+  // text-indent: -5px;
 }
 
 .left {
