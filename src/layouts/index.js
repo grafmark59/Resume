@@ -8,7 +8,7 @@ const Header = () => (
   <div
     style={{
       background: 'rgb(82, 86, 89)',
-      marginBottom: '1.45rem',
+      // marginBottom: '.05rem',
     }}
   >
     <div
@@ -26,7 +26,7 @@ const Header = () => (
             textDecoration: 'none',
           }}
         >
-          Daniel Gatsby
+          Daniel Graf Resume 2017
         </Link>
       </h1>
     </div>
@@ -36,20 +36,27 @@ const Header = () => (
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Gatsby Default Starter"
+      title="Daniel Graf Resume 2017"
       meta={[
-        { name: 'description', content: 'Daniel Graf Resume 2017' },
+        { name: 'description', content: 'Daniel Graf\'s Virtual Resume' },
         { name: 'keywords', content: 'Daniel, Graf, Resume, 2017' },
       ]}
-    />
+    >
+      <script type="text/javascript" src="//fast.fonts.net/jsapi/0a390850-37c6-420c-8ead-c15e81202559.js"></script>
+    </Helmet>
+    <Header/>
     <div
       style={{
         margin: '0 auto',
-        maxWidth: '100%',
+        width: '100%',
         minHeight: '100vh',
-        padding: '1.0875rem 1.0875rem 1.45rem',
+        padding: '1.0875rem 12.9rem 1.45rem', // Padding around Document
         paddingTop: 0,
-        backgroundColor: 'rgb(82, 86, 89)'
+        // backgroundColor: '#FFF'
+        backgroundColor: 'rgb(82, 86, 89)',
+        position: 'absolute',
+        // whiteSpace: 'nowrap',
+        overflow: 'hidden'
       }}
     >
       {children()}
