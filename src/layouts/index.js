@@ -42,7 +42,7 @@ const TemplateWrapper = ({ children }) => (
         { name: 'keywords', content: 'Daniel, Graf, Resume, 2017' },
       ]}
     >
-      <script type="text/javascript" src="//fast.fonts.net/jsapi/0a390850-37c6-420c-8ead-c15e81202559.js"></script>
+      <script type="text/javascript" src="http://fast.fonts.net/jsapi/0a390850-37c6-420c-8ead-c15e81202559.js"></script>
     </Helmet>
     <Header/>
     <div
