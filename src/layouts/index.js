@@ -46,14 +46,14 @@ const TemplateWrapper = ({ children }) => (
     >
       <script type="text/javascript" src="http://fast.fonts.net/jsapi/0a390850-37c6-420c-8ead-c15e81202559.js"></script>
     </Helmet>
-    <Header/>
+    {/* <Header/> */}
     <div
       style={{
         margin: '0 auto',
         width: '100%',
         minHeight: '100vh',
         padding: '1.0875rem 12.9rem 1.45rem', // Padding around Document
-        paddingTop: 0,
+        paddingTop: '60px',
         // backgroundColor: '#FFF'
         backgroundColor: 'rgb(82, 86, 89)',
         position: 'absolute',

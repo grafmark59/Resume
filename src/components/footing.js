@@ -4,7 +4,8 @@ export default ({ children }) =>
   <div
     style={
       {
-        paddingBottom: '72px',
+        paddingTop: '50px',
+        paddingBottom: '100px',
         display: 'flex',
         width: '100%',
         backgroundColor: 'rgb(255, 255, 255)'
