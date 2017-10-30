@@ -95,57 +95,95 @@ export default () =>
             -	Developed a full-stack Ruby on Rails solution with a MySQL database
           </li>
           <li>
-            -	Implemented a system with log-in functionality for all staff to be able to
-            go online and see their respective evaluations
+            - Implemented a system with log-in functionality for all staff to be able to<br/>
+          </li>
+          <li className='indent'>
+              go online and see their respective evaluations
           </li>
         </ul>
         <h4><span>Teaching Assistant </span> • App Design and Development • Spring ‘17</h4>
-        <p>
-          -	Worked as a TA for 67-272, the first major Information Systems course in <br/>
-            terms of web application development (Ruby on Rails) <br/>
-          -	Graded tests and projects while also running weekly labs
-        </p>
+        <ul className='dashed'>
+          <li>
+            -	Worked as a TA for 67-272, the first major Information Systems course in
+          </li>
+          <li className='indent'>
+              terms of web application development (Ruby on Rails)
+          </li>
+          <li>
+            -	Graded tests and projects while also running weekly labs
+          </li>
+        </ul>
         <h4><span>Camp Counselor</span> • Bear Creek Camp • Summers ‘14-‘16</h4>
-        <p>
-          -	Worked as a camp counselor for 10 weeks throughout the summer<br/>
-          -	Supervised new groups of 10-20 kids, ages 8-18, every week
-
-        </p>
+        <ul className='dashed'>
+          <li>
+            -	Worked as a camp counselor for 10 weeks throughout the summer
+          </li>
+          <li>
+            -	Supervised new groups of 10-20 kids, ages 8-18, every week
+          </li>
+        </ul>
 
         <h2>Project Experience</h2>
         <h4><span>Beaver County Humane Society Foster Portal </span> • Spring ‘17</h4>
-        <p>
-          -	Continued a Ruby on Rails project that was started in 2016 <br/>
-          -	Fixed bugs, reorganized basic functionality, and implemented a complete <br/>
+        <ul className='dashed'>
+          <li>
+            -	Continued a Ruby on Rails project that was started in 2016
+          </li>
+          <li>
+            -	Fixed bugs, reorganized basic functionality, and implemented a complete
+          </li>
+          <li className='indent'>
             design overhaul.
+          </li>
+        </ul>
 
-        </p>
         <h4><span>CMU Soundbytes Website</span> • Spring ‘17</h4>
-        <p>
-          -	Built a website for the CMU Soundbytes a cappella group using the<br/>
+        <ul className='dashed'>
+          <li>
+            -	Built a website for the CMU Soundbytes a cappella group using the
+          </li>
+          <li className='indent'>
             Jekyll Ruby gem and launched it through GitHub Pages
-        </p>
+          </li>
+        </ul>
+
         <h4><span>CMU Safety Pin</span> • Fall ‘16</h4>
-        <p>
-          -	An iOS application with a web-application backend <br/>
-          -	Developed the iOS frontend and interactions throughout the app
-        </p>
+        <ul className='dashed'>
+          <li>
+            -	An iOS application with a web-application backend
+          </li>
+          <li>
+            -	Developed the iOS frontend and interactions throughout the app
+          </li>
+        </ul>
 
         <h2>Other Experiences</h2>
         <h4><span>Study Abroad</span> • Spring ‘16</h4>
-        <p>
-          -	Attended the Technische Universität Dresden <br/>
-          - Developed use of German in a classroom/group setting
-        </p>
+        <ul className='dashed'>
+          <li>
+            -	Attended the Technische Universität Dresden
+          </li>
+          <li>
+            - Developed use of German in a classroom/group setting
+          </li>
+        </ul>
+
         <h4><span>Technical Assistant </span> • Center for Pain Control • Jan – Feb ‘16</h4>
-        <p>
-          -	Served as tech support, set up and connected new computers to a server
-        </p>
+        <ul className='dashed'>
+          <li>
+            -	Served as tech support, set up and connected new computers to a server
+          </li>
+        </ul>
+
         <h4><span>Guatemalan Mission Trips</span> • Summers 2007-2009</h4>
-        <p>
-          -	Provided medical aid, vacation bible school, and construction crews to <br/>
+        <ul className='dashed'>
+          <li>
+            -	Provided medical aid, vacation bible school, and construction crews to
+          </li>
+          <li className='indent'>
             local families, schools, and orphanages
-        </p>
+          </li>
+        </ul>
       </RightColumn>
     </MainBody>
     <Footing>

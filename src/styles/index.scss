@@ -35,7 +35,7 @@ h3 { // Subtitle
 
 h4 { // Section Header
   font-size: 11pt;
-  margin-bottom: 7px;
+  margin-bottom: 6px;
   color: #000000;
   span {
     font-weight: 900;
@@ -49,8 +49,8 @@ h5 {
 }
 
 p { // Main Info
-  line-height: 1;
-  margin-bottom: 7px;
+  line-height: 1.15;
+  margin-bottom: 6px;
   font-size: 10pt;
   color: #595959;
 }
@@ -58,19 +58,22 @@ p { // Main Info
 ul {
   margin: 0;
   line-height: 1;
-  margin-bottom: 7px;
+  margin-bottom: 6px;
   font-size: 10pt;
   color: #595959;
+  li {
+    margin-bottom: 3px;
+  }
 }
 ul.dashed {
   list-style-type: none;
 }
 ul.dashed > li {
-  // text-indent: -5px;
+  text-indent: 10px;
 }
-ul.dashed > li:before {
-  content: "-";
-  // text-indent: -5px;
+
+ul.dashed > li.indent {
+  text-indent: 16px;
 }
 
 .left {
