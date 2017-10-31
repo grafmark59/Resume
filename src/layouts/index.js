@@ -50,7 +50,7 @@ const TemplateWrapper = ({ children }) => (
     <div
       style={{
         margin: '0 auto',
-        width: '100%',
+        width: 'auto',
         // minWidth: '1630px',
         minHeight: '100vh',
         padding: '1.0875rem 12.9rem 1.45rem', // Padding around Document
@@ -59,7 +59,7 @@ const TemplateWrapper = ({ children }) => (
         backgroundColor: 'rgb(82, 86, 89)',
         position: 'absolute',
         // whiteSpace: 'nowrap',
-        overflowX: 'scroll'
+        overflowX: 'hidden'
       }}
     >
       {children()}
