@@ -7,6 +7,7 @@ import Heading from "../components/heading"
 import MainBody from "../components/main-body"
 import Footing from "../components/footing"
 import Section from "../components/section"
+import Interact from "../components/interact"
 
 
 const DocumentPage = () => (
@@ -100,108 +101,128 @@ export default () =>
       <RightColumn>
         <h2>Work Experience</h2>
         <Section>
-          <h4><span>Tech. Consultant</span> • Palauan Ministry of Education • Summer ‘17</h4>
-          <ul className='dashed'>
-            <li>
-              -	Evaluated the paper-based Teacher Evaluation System
-            </li>
-            <li>
-              -	Developed a full-stack Ruby on Rails solution with a MySQL database
-            </li>
-            <li>
-              - Implemented a system with log-in functionality for all staff to be able to<br/>
-            </li>
-            <li className='indent'>
-                go online and see their respective evaluations
-            </li>
-          </ul>
-          <h4><span>Teaching Assistant </span> • App Design and Development • Spring ‘17</h4>
-          <ul className='dashed'>
-            <li>
-              -	Worked as a TA for 67-272, the first major Information Systems course in
-            </li>
-            <li className='indent'>
-                terms of web application development (Ruby on Rails)
-            </li>
-            <li>
-              -	Graded tests and projects while also running weekly labs
-            </li>
-          </ul>
-          <h4><span>Camp Counselor</span> • Bear Creek Camp • Summers ‘14-‘16</h4>
-          <ul className='dashed'>
-            <li>
-              -	Worked as a camp counselor for 10 weeks throughout the summer
-            </li>
-            <li>
-              -	Supervised new groups of 10-20 kids, ages 8-18, every week
-            </li>
-          </ul>
+          <Interact>
+            <h4><span>Tech. Consultant</span> • Palauan Ministry of Education • Summer ‘17</h4>
+            <ul className='dashed'>
+              <li>
+                -	Evaluated the paper-based Teacher Evaluation System
+              </li>
+              <li>
+                -	Developed a full-stack Ruby on Rails solution with a MySQL database
+              </li>
+              <li>
+                - Implemented a system with log-in functionality for all staff to be able to<br/>
+              </li>
+              <li className='indent'>
+                  go online and see their respective evaluations
+              </li>
+            </ul>
+          </Interact>
+
+          <Interact>
+            <h4><span>Teaching Assistant </span> • App Design and Development • Spring ‘17</h4>
+            <ul className='dashed'>
+              <li>
+                -	Worked as a TA for 67-272, the first major Information Systems
+              </li>
+              <li className='indent'>
+                  course in terms of web application development (Ruby on Rails)
+              </li>
+              <li>
+                -	Graded tests and projects while also running weekly labs
+              </li>
+            </ul>
+          </Interact>
+
+          <Interact>
+            <h4><span>Camp Counselor</span> • Bear Creek Camp • Summers ‘14-‘16</h4>
+            <ul className='dashed'>
+              <li>
+                -	Worked as a camp counselor for 10 weeks throughout the summer
+              </li>
+              <li>
+                -	Supervised new groups of 10-20 kids, ages 8-18, every week
+              </li>
+            </ul>
+          </Interact>
         </Section>
 
         <h2>Project Experience</h2>
         <Section>
-          <h4><span>Beaver County Humane Society Foster Portal </span> • Spring ‘17</h4>
-          <ul className='dashed'>
-            <li>
-              -	Continued a Ruby on Rails project that was started in 2016
-            </li>
-            <li>
-              -	Fixed bugs, reorganized basic functionality, and implemented a complete
-            </li>
-            <li className='indent'>
-              design overhaul.
-            </li>
-          </ul>
+          <Interact>
+            <h4><span>Beaver County Humane Society Foster Portal </span> • Spring ‘17</h4>
+            <ul className='dashed'>
+              <li>
+                -	Continued a Ruby on Rails project that was started in 2016
+              </li>
+              <li>
+                -	Fixed bugs, reorganized basic functionality, and implemented
+              </li>
+              <li className='indent'>
+                a complete design overhaul.
+              </li>
+            </ul>
+          </Interact>
 
-          <h4><span>CMU Soundbytes Website</span> • Spring ‘17</h4>
-          <ul className='dashed'>
-            <li>
-              -	Built a website for the CMU Soundbytes a cappella group using the
-            </li>
-            <li className='indent'>
-              Jekyll Ruby gem and launched it through GitHub Pages
-            </li>
-          </ul>
+          <Interact>
+            <h4><span>CMU Soundbytes Website</span> • Spring ‘17</h4>
+            <ul className='dashed'>
+              <li>
+                -	Built a website for the CMU Soundbytes a cappella group using the
+              </li>
+              <li className='indent'>
+                Jekyll Ruby gem and launched it through GitHub Pages
+              </li>
+            </ul>
+          </Interact>
 
-          <h4><span>CMU Safety Pin</span> • Fall ‘16</h4>
-          <ul className='dashed'>
-            <li>
-              -	An iOS application with a web-application backend
-            </li>
-            <li>
-              -	Developed the iOS frontend and interactions throughout the app
-            </li>
-          </ul>
+          <Interact>
+            <h4><span>CMU Safety Pin</span> • Fall ‘16</h4>
+            <ul className='dashed'>
+              <li>
+                -	An iOS application with a web-application backend
+              </li>
+              <li>
+                -	Developed the iOS frontend and interactions throughout the app
+              </li>
+            </ul>
+          </Interact>
         </Section>
 
         <h2>Other Experiences</h2>
         <Section>
-          <h4><span>Study Abroad</span> • Spring ‘16</h4>
-          <ul className='dashed'>
-            <li>
-              -	Attended the Technische Universität Dresden
-            </li>
-            <li>
-              - Developed use of German in a classroom/group setting
-            </li>
-          </ul>
+          <Interact>
+            <h4><span>Study Abroad</span> • Spring ‘16</h4>
+            <ul className='dashed'>
+              <li>
+                -	Attended the Technische Universität Dresden
+              </li>
+              <li>
+                - Developed use of German in a classroom/group setting
+              </li>
+            </ul>
+          </Interact>
 
-          <h4><span>Technical Assistant </span> • Center for Pain Control • Jan – Feb ‘16</h4>
-          <ul className='dashed'>
-            <li>
-              -	Served as tech support, set up and connected new computers to a server
-            </li>
-          </ul>
+          <Interact>
+            <h4><span>Technical Assistant </span> • Center for Pain Control • Jan – Feb ‘16</h4>
+            <ul className='dashed'>
+              <li>
+                -	Served as tech support, set up & connected new computers to a server
+              </li>
+            </ul>
+          </Interact>
 
-          <h4><span>Guatemalan Mission Trips</span> • Summers 2007-2009</h4>
-          <ul className='dashed'>
-            <li>
-              -	Provided medical aid, vacation bible school, and construction crews to
-            </li>
-            <li className='indent'>
-              local families, schools, and orphanages
-            </li>
-          </ul>
+          <Interact>
+            <h4><span>Guatemalan Mission Trips</span> • Summers 2007-2009</h4>
+            <ul className='dashed'>
+              <li>
+                -	Provided medical aid, vacation bible school, and construction crews to
+              </li>
+              <li className='indent'>
+                local families, schools, and orphanages
+              </li>
+            </ul>
+          </Interact>
         </Section>
       </RightColumn>
     </MainBody>

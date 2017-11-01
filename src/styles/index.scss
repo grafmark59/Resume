@@ -12,6 +12,18 @@
   }
 }
 
+.interact {
+  border: 0px solid white;
+  padding: 0px;
+  transition: border 0.5s ease;
+  transition: padding 0.5s ease;
+  &:hover {
+    cursor: pointer;
+    border:3px solid #008AFF;
+    padding: 3px;
+  }
+}
+
 body {
   background-color: rgb(82, 86, 89);
 }
