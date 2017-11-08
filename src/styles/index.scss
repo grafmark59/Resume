@@ -15,8 +15,7 @@
 .interact {
   border: 0px solid white;
   padding: 0px;
-  transition: border 0.5s ease;
-  transition: padding 0.5s ease;
+  transition: border 0.5s ease, padding 0.5s ease;
   &:hover {
     cursor: pointer;
     border:3px solid #008AFF;

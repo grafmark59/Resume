@@ -34,7 +34,7 @@ export default () =>
         <h3 className='right'>
           <span>
             <br/>
-            danielgraf.developer@gmail.com
+            <a href="mailto:danielgraf.developer@gmail.com">danielgraf.developer@gmail.com</a>
             <br/>
             (610) 763-1629
           </span>
