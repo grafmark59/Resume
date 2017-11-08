@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import Modal from './modal';
 import ReactModal from 'react-modal';
 
 class Interact extends Component {
@@ -7,7 +6,6 @@ class Interact extends Component {
     super(props);
 
     this.state = {
-      isOpen: false,
       showModal: false
      };
 
@@ -23,11 +21,6 @@ class Interact extends Component {
     this.setState({ showModal: false });
   }
 
-  toggleModal = () => {
-    this.setState({
-      isOpen: !this.state.isOpen
-    });
-  }
 
   render() {
     return (
@@ -40,12 +33,18 @@ class Interact extends Component {
            contentLabel="Minimal Modal Example"
            onRequestClose={this.handleCloseModal}
         >
+          <h2 ref={subtitle => this.subtitle = subtitle}>Hello</h2>
+          <button onClick={this.handleCloseModal}>close</button>
+          <div>I am a modal</div>
+          <form>
+            <input />
+            <button>tab navigation</button>
+            <button>stays</button>
+            <button>inside</button>
+            <button>the modal</button>
+          </form>
           <button onClick={this.handleCloseModal}>Close Modal</button>
         </ReactModal>
-        <Modal show={this.state.isOpen}
-          onClose={this.toggleModal}>
-          Here's some content for the modal
-        </Modal>
       </div>
     );
   }

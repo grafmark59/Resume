@@ -10,14 +10,6 @@ import Section from "../components/section"
 import Interact from "../components/interact"
 
 
-const DocumentPage = () => (
-  <div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
-  </div>
-)
 
 export default () =>
   <Document>
@@ -34,7 +26,7 @@ export default () =>
         <h3 className='right'>
           <span>
             <br/>
-            <a href="mailto:danielgraf.developer@gmail.com">danielgraf.developer@gmail.com</a>
+            <a className='email' href="mailto:danielgraf.developer@gmail.com">danielgraf.developer@gmail.com</a>
             <br/>
             (610) 763-1629
           </span>
