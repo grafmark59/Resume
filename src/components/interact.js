@@ -19,26 +19,25 @@ class Interact extends Component {
 
   handleOpenModal () {
     this.fadeOut();
-    this.fadeIn();
+    this.fadeIn(true);
   }
 
   handleCloseModal () {
     this.fadeOut();
-    this.fadeIn();
+    this.fadeIn(true);
   }
 
-  fadeIn() {
+  fadeIn(openClose) {
     setTimeout(function() {
-      this.setState({ showModal: !this.state.showModal });
+      if (openClose===true){
+        this.setState({ showModal: !this.state.showModal });
+      }
       document.body.classList.toggle('fade', false);
     }.bind(this), 400);
   }
 
   fadeOut() {
     document.body.classList.toggle('fade', true);
-    // setTimeout(() => {
-    //   document.body.classList.toggle('fade', true);
-    // }, 2000);
   }
 
 
@@ -52,7 +51,6 @@ class Interact extends Component {
            ref={(input) => { this.textInput = input; }}
            isOpen={this.state.showModal}
            contentLabel="Minimal Modal Example"
-           // onAfterOpen={this.fadeIn}
            onRequestClose={this.handleCloseModal}
         >
           <MuiThemeProvider>

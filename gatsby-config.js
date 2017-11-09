@@ -1,7 +1,7 @@
 module.exports = {
-  pathPrefix: `/gatsby-site`,
+  pathPrefix: `/Resume`,
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Daniel Graf Resume 2017`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
