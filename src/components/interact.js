@@ -18,28 +18,27 @@ class Interact extends Component {
   }
 
   handleOpenModal () {
-    this.setState({ showModal: true });
+    this.fadeOut();
+    this.fadeIn();
   }
 
   handleCloseModal () {
-    this.setState({ showModal: false });
+    this.fadeOut();
+    this.fadeIn();
   }
 
   fadeIn() {
-    // // Get the components DOM node
-  	// var elem = ReactDOM.findDOMNode(this.subtitle);
-  	// // Set the opacity of the element to 0
-  	// elem.style.opacity = 0;
-  	// window.requestAnimationFrame(function() {
-  	// 	// Now set a transition on the opacity
-  	// 	elem.style.transition = "opacity 250ms";
-  	// 	// and set the opacity to 1
-  	// 	elem.style.opacity = 1;
-  	// });
+    setTimeout(function() {
+      this.setState({ showModal: !this.state.showModal });
+      document.body.classList.toggle('fade', false);
+    }.bind(this), 400);
   }
 
   fadeOut() {
-
+    document.body.classList.toggle('fade', true);
+    // setTimeout(() => {
+    //   document.body.classList.toggle('fade', true);
+    // }, 2000);
   }
 
 
@@ -53,13 +52,13 @@ class Interact extends Component {
            ref={(input) => { this.textInput = input; }}
            isOpen={this.state.showModal}
            contentLabel="Minimal Modal Example"
-           onAfterOpen={this.fadeIn}
+           // onAfterOpen={this.fadeIn}
            onRequestClose={this.handleCloseModal}
         >
           <MuiThemeProvider>
             <MaterialContent
               closeModal={this.handleCloseModal}
-              projectTitle='test title'
+              projectTitle={this.props.title}
             />
           </MuiThemeProvider>
           <h2 ref={subtitle => this.subtitle = subtitle}>Hello</h2>

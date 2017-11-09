@@ -100,7 +100,7 @@ export default () =>
         <Section>
           {
             workData.work.map((job) =>
-              <Interact key={job.key}>
+              <Interact key={job.key} title={job.position}>
                 <h4><span>{job.position}</span> • {job.location} • {job.date}</h4>
                 <ul className='dashed'>
                   {
@@ -120,7 +120,7 @@ export default () =>
         <Section>
           {
             projectData.projects.map((project) =>
-              <Interact key={project.key}>
+              <Interact key={project.key} title={project.title}>
                 <h4><span>{project.title}</span> • {project.date}</h4>
                 <ul className='dashed'>
                   {
@@ -140,7 +140,7 @@ export default () =>
         <Section>
           {
             otherData.other.map((obj) =>
-              <Interact key={obj.key}>
+              <Interact key={obj.key} title={obj.title}>
                 <h4><span>{obj.title}</span> • {obj.location} • {obj.date}</h4>
                 <ul className='dashed'>
                   {
