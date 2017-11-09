@@ -1,5 +1,8 @@
 import React, { Component } from "react"
 import ReactModal from 'react-modal';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import MaterialContent from './materialContent';
+import RaisedButton from 'material-ui/RaisedButton';
 
 class Interact extends Component {
   constructor(props) {
@@ -33,16 +36,11 @@ class Interact extends Component {
            contentLabel="Minimal Modal Example"
            onRequestClose={this.handleCloseModal}
         >
+          <MuiThemeProvider>
+            <MaterialContent closeModal={this.handleCloseModal} />
+          </MuiThemeProvider>
           <h2 ref={subtitle => this.subtitle = subtitle}>Hello</h2>
-          <button onClick={this.handleCloseModal}>close</button>
-          <div>I am a modal</div>
-          <form>
-            <input />
-            <button>tab navigation</button>
-            <button>stays</button>
-            <button>inside</button>
-            <button>the modal</button>
-          </form>
+
           <button onClick={this.handleCloseModal}>Close Modal</button>
         </ReactModal>
       </div>

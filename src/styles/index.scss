@@ -123,9 +123,15 @@ ul.dashed > li.indent {
 // Modal Styles
 .ReactModal__Content {
   // transition: display 0.5s ease;
+  padding: 0px !important;
 }
 
 .ReactModal__Body--open {
     overflow: hidden;
     position: fixed;
+}
+
+// NavBar Styles
+.modalNavBar {
+  background-color: #008AFF !important;
 }
