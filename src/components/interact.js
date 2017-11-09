@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import ReactDOM from 'react-dom';
 import ReactModal from 'react-modal';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import MaterialContent from './materialContent';
@@ -24,6 +25,23 @@ class Interact extends Component {
     this.setState({ showModal: false });
   }
 
+  fadeIn() {
+    // // Get the components DOM node
+  	// var elem = ReactDOM.findDOMNode(this.subtitle);
+  	// // Set the opacity of the element to 0
+  	// elem.style.opacity = 0;
+  	// window.requestAnimationFrame(function() {
+  	// 	// Now set a transition on the opacity
+  	// 	elem.style.transition = "opacity 250ms";
+  	// 	// and set the opacity to 1
+  	// 	elem.style.opacity = 1;
+  	// });
+  }
+
+  fadeOut() {
+
+  }
+
 
   render() {
     return (
@@ -32,12 +50,17 @@ class Interact extends Component {
           { this.props.children }
         </div>
         <ReactModal
+           ref={(input) => { this.textInput = input; }}
            isOpen={this.state.showModal}
            contentLabel="Minimal Modal Example"
+           onAfterOpen={this.fadeIn}
            onRequestClose={this.handleCloseModal}
         >
           <MuiThemeProvider>
-            <MaterialContent closeModal={this.handleCloseModal} />
+            <MaterialContent
+              closeModal={this.handleCloseModal}
+              projectTitle='test title'
+            />
           </MuiThemeProvider>
           <h2 ref={subtitle => this.subtitle = subtitle}>Hello</h2>
 

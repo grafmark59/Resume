@@ -3,7 +3,7 @@
   color: grey;
 }
 
-.email {
+.link {
   color: inherit;
   text-decoration: none;
   transition: color 0.3s ease;
@@ -127,8 +127,9 @@ ul.dashed > li.indent {
 }
 
 .ReactModal__Body--open {
+  // overflow-y: hidden;
     overflow: hidden;
-    position: fixed;
+    position: absolute;
 }
 
 // NavBar Styles

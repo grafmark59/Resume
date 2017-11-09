@@ -1,0 +1,82 @@
+{
+  "work": [
+    {
+      "key": "w0",
+      "position": "Tech. Consultant",
+      "location": "Palauan Ministry of Education",
+      "date": "Summer ‘17",
+      "responsibilities": [
+        {
+          "key": "w0_0",
+          "content": "- Evaluated the paper-based Teacher Evaluation System",
+          "className": ""
+        },
+        {
+          "key": "w0_1",
+          "content": "- Developed a full-stack Ruby on Rails solution with a MySQL database",
+          "className": ""
+        },
+        {
+          "key": "w0_2",
+          "content": "- Implemented a system with log-in functionality for all staff to be able to",
+          "className": ""
+        },
+        {
+          "key": "w0_3",
+          "content": "go online and see their respective evaluations",
+          "className": "indent"
+        }
+      ],
+      "fullContent":{
+
+      }
+    },
+    {
+      "key": "w1",
+      "position": "Teaching Assistant",
+      "location": "App Design and Development",
+      "date": "Spring ‘17",
+      "responsibilities": [
+        {
+          "key": "w1_0",
+          "content": "- Worked as a TA for 67-272, the first major Information Systems",
+          "className": ""
+        },
+        {
+          "key": "w1_1",
+          "content": "course in terms of web application development (Ruby on Rails)",
+          "className": "indent"
+        },
+        {
+          "key": "w1_2",
+          "content": "- Graded tests and projects while also running weekly labs",
+          "className": ""
+        }
+      ],
+      "fullContent":{
+
+      }
+    },
+    {
+      "key": "w2",
+      "position": "Camp Counselor",
+      "location": "Bear Creek Camp",
+      "date": "Summers ‘14-‘16",
+      "responsibilities": [
+        {
+          "key": "w2_0",
+          "content": "- Worked as a camp counselor for 10 weeks throughout the summer",
+          "className": ""
+        },
+        {
+          "key": "w2_1",
+          "content": "- Supervised new groups of 10-20 kids, ages 8-18, every week",
+          "className": ""
+        }
+      ],
+      "fullContent":{
+
+      }
+    }
+  ]
+}

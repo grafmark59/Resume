@@ -1,0 +1,62 @@
+{
+  "other": [
+    {
+      "key": "o0",
+      "title": "Study Abroad",
+      "location": "TU Dresden",
+      "date": "Spring ‘16",
+      "responsibilities": [
+        {
+          "key": "o0_0",
+          "content": "- Attended the Technische Universität Dresden",
+          "className": ""
+        },
+        {
+          "key": "o0_1",
+          "content": "- Developed use of German in a classroom/group setting",
+          "className": ""
+        }
+      ],
+      "fullContent":{
+
+      }
+    },
+    {
+      "key": "o1",
+      "title": "Technical Assistant",
+      "location": "Center for Pain Control",
+      "date": "Jan – Feb ‘16",
+      "responsibilities": [
+        {
+          "key": "o1_0",
+          "content": "- Served as tech support, set up & connected new computers to a server",
+          "className": ""
+        }
+      ],
+      "fullContent":{
+
+      }
+    },
+    {
+      "key": "o2",
+      "title": "Mission Trips",
+      "location": "Guatemala",
+      "date": "Summers 2007-2009",
+      "responsibilities": [
+        {
+          "key": "o2_0",
+          "content": "- Provided medical aid, vacation bible school, and construction crews to",
+          "className": ""
+        },
+        {
+          "key": "o2_1",
+          "content": "local families, schools, and orphanages",
+          "className": "indent"
+        }
+      ],
+      "fullContent":{
+
+      }
+    }
+  ]
+}

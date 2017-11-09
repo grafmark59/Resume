@@ -1,0 +1,69 @@
+{
+  "projects": [
+    {
+      "key": "p0",
+      "title": "Beaver County Humane Society Foster Portal",
+      "date": "Spring ‘17",
+      "responsibilities": [
+        {
+          "key": "p0_0",
+          "content": "- Continued a Ruby on Rails project that was started in 2016",
+          "className": ""
+        },
+        {
+          "key": "p0_1",
+          "content": "- Fixed bugs, reorganized basic functionality, and implemented",
+          "className": ""
+        },
+        {
+          "key": "p0_2",
+          "content": "a complete design overhaul.",
+          "className": "indent"
+        }
+      ],
+      "fullContent":{
+
+      }
+    },
+    {
+      "key": "p1",
+      "title": "CMU Soundbytes Website",
+      "date": "Spring ‘17",
+      "responsibilities": [
+        {
+          "key": "p1_0",
+          "content": "- Built a website for the CMU Soundbytes a cappella group using the",
+          "className": ""
+        },
+        {
+          "key": "p1_1",
+          "content": "Jekyll Ruby gem and launched it through GitHub Pages",
+          "className": "indent"
+        }
+      ],
+      "fullContent":{
+
+      }
+    },
+    {
+      "key": "p2",
+      "title": "CMU Safety Pin",
+      "date": "Fall ‘16",
+      "responsibilities": [
+        {
+          "key": "p2_0",
+          "content": "- An iOS application with a web-application backend",
+          "className": ""
+        },
+        {
+          "key": "p2_1",
+          "content": "- Developed the iOS frontend and interactions throughout the app",
+          "className": ""
+        }
+      ],
+      "fullContent":{
+
+      }
+    }
+  ]
+}
