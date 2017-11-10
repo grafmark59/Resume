@@ -22,7 +22,9 @@
         }
       ],
       "fullContent":{
-
+        "fullTitle": "Beaver County Humance Society Foster Portal",
+        "course": "67-373: Software Development Project",
+        "content": ""
       }
     },
     {
@@ -42,7 +44,9 @@
         }
       ],
       "fullContent":{
-
+        "fullTitle": "CMU Soundbytes Website",
+        "client": "Soundbytes A Cappella Group",
+        "content": ""
       }
     },
     {
@@ -62,7 +66,9 @@
         }
       ],
       "fullContent":{
-
+        "fullTitle": "CMU Safety Pin",
+        "course": "67475: Innovation in Information Systems",
+        "content": ""
       }
     }
   ]

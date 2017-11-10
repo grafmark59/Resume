@@ -18,7 +18,9 @@
         }
       ],
       "fullContent":{
-
+        "fullTitle": "Study Abroad at the Technische Universität Dresden",
+        "location": "Dresden, Germany",
+        "content": ""
       }
     },
     {
@@ -34,7 +36,9 @@
         }
       ],
       "fullContent":{
-
+        "fullTitle": "Technical Assisstant",
+        "client": "Center for Pain Control",
+        "content": ""
       }
     },
     {
@@ -55,7 +59,9 @@
         }
       ],
       "fullContent":{
-
+        "fullTitle": "Mission Trips",
+        "location": "Antigua, Guatemala",
+        "content": ""
       }
     }
   ]
