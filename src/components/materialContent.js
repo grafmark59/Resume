@@ -19,13 +19,18 @@ const favoritesIcon = <FontIcon className="material-icons">favorite</FontIcon>;
 const nearbyIcon = <IconLocationOn />;
 const closeIcon = <NavigationClose />;
 
+// Drawer imports
+import Drawer from 'material-ui/Drawer';
+import MenuItem from 'material-ui/MenuItem';
+
 
 class MyAwesomeReactComponent extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      selectedIndex: 0
+      selectedIndex: 0,
+      openDrawer: false
     }
 
 
@@ -34,6 +39,10 @@ class MyAwesomeReactComponent extends Component {
   }
 
   select = (index) => this.setState({selectedIndex: index});
+
+  handleDrawerToggle = () => this.setState({openDrawer: !this.state.openDrawer});
+
+  handleDrawerClose = () => this.setState({openDrawer: false});
 
   handleCloseModal () {
     this.props.closeModal();
@@ -50,10 +59,20 @@ class MyAwesomeReactComponent extends Component {
           title={this.props.projectTitle}
           className="modalNavBar"
           // iconClassNameRight="muidocs-icon-navigation-expand-more"
+          onLeftIconButtonTouchTap={this.handleDrawerToggle}
           iconElementRight={<IconButton onClick={this.handleCloseModal}><NavigationClose /></IconButton>}
         >
 
         </AppBar>
+        <Drawer
+          docked={false}
+          width={200}
+          open={this.state.openDrawer}
+          onRequestChange={(openDrawer) => this.setState({openDrawer})}
+        >
+          <MenuItem onClick={this.handleDrawerClose}>Menu Item</MenuItem>
+          <MenuItem onClick={this.handleDrawerClose}>Menu Item 2</MenuItem>
+        </Drawer>
         <div className='modalContent'>
           <p>Test Content</p>
           <p>Test Content</p>
