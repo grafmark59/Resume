@@ -17,7 +17,7 @@ import IconLocationOn from 'material-ui/svg-icons/communication/location-on';
 const recentsIcon = <FontIcon className="material-icons">restore</FontIcon>;
 const favoritesIcon = <FontIcon className="material-icons">favorite</FontIcon>;
 const nearbyIcon = <IconLocationOn />;
-const closeIcon = <NavigationClose />;
+const closeIcon = <NavigationClose color="#008AFF" />;
 
 
 
@@ -63,7 +63,7 @@ class MyAwesomeReactComponent extends Component {
         </AppBar>
 
         <div className='modalContent'>
-
+          { this.props.projectContent }
           <p>Test Content</p>
           <p>Test Content</p>
           <p>Test Content</p>
@@ -93,19 +93,8 @@ class MyAwesomeReactComponent extends Component {
           <Paper zDepth={1}>
             <BottomNavigation selectedIndex={this.state.selectedIndex}>
               <BottomNavigationItem
-                label="Recents"
-                icon={nearbyIcon}
-                onClick={() => this.select(0)}
-              />
-              <BottomNavigationItem
-                label="Close"
                 icon={closeIcon}
                 onClick={() => this.handleCloseModal()}
-              />
-              <BottomNavigationItem
-                label="Nearby"
-                icon={nearbyIcon}
-                onClick={() => this.select(2)}
               />
             </BottomNavigation>
           </Paper>

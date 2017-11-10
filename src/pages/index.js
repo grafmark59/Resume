@@ -47,7 +47,12 @@ class Resume extends Component {
   // Modal Functions
   switchModalContent (title) {
     this.setState({ modalTitle: title });
-    this.setState({ modalContent: 'test' })
+    this.setState({ modalContent: 'test' });
+  }
+
+  switchModalFromMenu (title) {
+    this.handleDrawerClose();
+    this.switchModalContent(title);
   }
 
   handleOpenModal (title) {
@@ -164,7 +169,7 @@ class Resume extends Component {
                 workData.work.map((job) =>
                   <Interact
                     key={job.key}
-                    title={job.position}
+                    title={job.fullContent.fullTitle}
                     innerOpenModal={this.handleOpenModal}
                     >
                     <h4>
@@ -195,7 +200,7 @@ class Resume extends Component {
                 projectData.projects.map((project) =>
                   <Interact
                     key={project.key}
-                    title={project.title}
+                    title={project.fullContent.fullTitle}
                     innerOpenModal={this.handleOpenModal}
                     >
                     <h4><span>{project.title}</span> • {project.date}</h4>
@@ -224,7 +229,7 @@ class Resume extends Component {
                 otherData.other.map((obj) =>
                   <Interact
                     key={obj.key}
-                    title={obj.title}
+                    title={obj.fullContent.fullTitle}
                     innerOpenModal={this.handleOpenModal}
                     >
                     <h4><span>{obj.title} </span>
@@ -282,6 +287,7 @@ class Resume extends Component {
                       <MenuItem
                         key={'workList'+i}
                         insetChildren={true}
+                        onClick={() => this.switchModalFromMenu(job.fullContent.fullTitle)}
                         innerDivStyle= {
                           {
                             textOverflow: 'ellipsis',
@@ -305,6 +311,7 @@ class Resume extends Component {
                       <MenuItem
                         key={'projectList'+i}
                         insetChildren={true}
+                        onClick={() => this.switchModalFromMenu(project.fullContent.fullTitle)}
                         innerDivStyle= {
                           {
                             textOverflow: 'ellipsis',
@@ -328,6 +335,7 @@ class Resume extends Component {
                       <MenuItem
                         key={'otherList'+i}
                         insetChildren={true}
+                        onClick={() => this.switchModalFromMenu(obj.fullContent.fullTitle)}
                         innerDivStyle= {
                           {
                             textOverflow: 'ellipsis',
