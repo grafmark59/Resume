@@ -19,10 +19,6 @@ const favoritesIcon = <FontIcon className="material-icons">favorite</FontIcon>;
 const nearbyIcon = <IconLocationOn />;
 const closeIcon = <NavigationClose />;
 
-// Drawer imports
-import Drawer from 'material-ui/Drawer';
-import MenuItem from 'material-ui/MenuItem';
-import ArrowDropDown from 'material-ui/svg-icons/navigation/expand-more';
 
 
 class MyAwesomeReactComponent extends Component {
