@@ -276,31 +276,70 @@ class Resume extends Component {
                   key='workList'
                   rightIcon={<ArrowDropDown />}
                   primaryTogglesNestedList={true}
-                  nestedItems={[
-                    <MenuItem key='workList0' primaryText="Grid lines" checked={true} />,
-                    <MenuItem key='workList1' primaryText="Page breaks" insetChildren={true} />,
-                    <MenuItem key='workList2' primaryText="Rules" checked={true} />,
-                  ]}
+                  nestedItems={
+                    // Loops through the jobs
+                    workData.work.map((job, i) =>
+                      <MenuItem
+                        key={'workList'+i}
+                        insetChildren={true}
+                        innerDivStyle= {
+                          {
+                            textOverflow: 'ellipsis',
+                            whiteSpace: 'nowrap',
+                            overflow: 'hidden'
+                          }
+                        }
+                      >
+                        {job.position}
+                      </MenuItem>
+                    )
+                  }
                   >Work Experience</MenuItem>
                 <MenuItem
                   key='projectList'
                   rightIcon={<ArrowDropDown />}
                   primaryTogglesNestedList={true}
-                  nestedItems={[
-                    <MenuItem key='projectList0' primaryText="Grid lines" checked={true} />,
-                    <MenuItem key='projectList1' primaryText="Page breaks" insetChildren={true} />,
-                    <MenuItem key='projectList2' primaryText="Rules" checked={true} />,
-                  ]}
+                  nestedItems={
+                    // Loops through the projects
+                    projectData.projects.map((project, i) =>
+                      <MenuItem
+                        key={'projectList'+i}
+                        insetChildren={true}
+                        innerDivStyle= {
+                          {
+                            textOverflow: 'ellipsis',
+                            whiteSpace: 'nowrap',
+                            overflow: 'hidden'
+                          }
+                        }
+                      >
+                        {project.title}
+                      </MenuItem>
+                    )
+                  }
                 >Project Experience</MenuItem>
                 <MenuItem
                   key='otherList'
                   rightIcon={<ArrowDropDown />}
                   primaryTogglesNestedList={true}
-                  nestedItems={[
-                    <MenuItem key='otherList0' primaryText="Grid lines" checked={true} />,
-                    <MenuItem key='otherList1' primaryText="Page breaks" insetChildren={true} />,
-                    <MenuItem key='otherList2' primaryText="Rules" checked={true} />,
-                  ]}
+                  nestedItems={
+                    // Loops through the projects
+                    otherData.other.map((obj, i) =>
+                      <MenuItem
+                        key={'otherList'+i}
+                        insetChildren={true}
+                        innerDivStyle= {
+                          {
+                            textOverflow: 'ellipsis',
+                            whiteSpace: 'nowrap',
+                            overflow: 'hidden'
+                          }
+                        }
+                      >
+                        {obj.title}
+                      </MenuItem>
+                    )
+                  }
                   >Other Experience</MenuItem>
               </Drawer>
             </div>
