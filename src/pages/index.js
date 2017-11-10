@@ -26,7 +26,9 @@ class Resume extends Component {
     super(props);
 
     this.state = {
-      showModal: false
+      showModal: false,
+      modalTitle: '',
+      modalContent: ''
      };
 
     this.handleOpenModal = this.handleOpenModal.bind(this);
@@ -141,7 +143,7 @@ class Resume extends Component {
             <Section>
               {
                 workData.work.map((job) =>
-                  <Interact key={job.key} title={job.position}>
+                  <Interact key={job.key} title={job.position} innerOpenModal={this.handleOpenModal}>
                     <h4><span>{job.position}</span> • {job.location} • {job.date}</h4>
                     <ul className='dashed'>
                       {
@@ -161,7 +163,7 @@ class Resume extends Component {
             <Section>
               {
                 projectData.projects.map((project) =>
-                  <Interact key={project.key} title={project.title}>
+                  <Interact key={project.key} title={project.title} innerOpenModal={this.handleOpenModal}>
                     <h4><span>{project.title}</span> • {project.date}</h4>
                     <ul className='dashed'>
                       {
@@ -181,7 +183,7 @@ class Resume extends Component {
             <Section>
               {
                 otherData.other.map((obj) =>
-                  <Interact key={obj.key} title={obj.title}>
+                  <Interact key={obj.key} title={obj.title} innerOpenModal={this.handleOpenModal}>
                     <h4><span>{obj.title}</span> • {obj.location} • {obj.date}</h4>
                     <ul className='dashed'>
                       {
