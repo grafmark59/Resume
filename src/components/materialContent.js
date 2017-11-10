@@ -30,20 +30,20 @@ class MyAwesomeReactComponent extends Component {
     super(props);
 
     this.state = {
-      selectedIndex: 0,
-      openDrawer: false
+      selectedIndex: 0
     }
 
 
     // this.projectTitle = this.props.projectTitle;
+    this.handleDrawerToggle = this.handleDrawerToggle.bind(this);
     this.handleCloseModal = this.handleCloseModal.bind(this);
   }
 
+  handleDrawerToggle() {
+    this.props.toggleDrawer();
+  }
+
   select = (index) => this.setState({selectedIndex: index});
-
-  handleDrawerToggle = () => this.setState({openDrawer: !this.state.openDrawer});
-
-  handleDrawerClose = () => this.setState({openDrawer: false});
 
   handleCloseModal () {
     this.props.closeModal();
@@ -65,43 +65,7 @@ class MyAwesomeReactComponent extends Component {
         >
 
         </AppBar>
-        <Drawer
-          docked={false}
-          width={300}
-          open={this.state.openDrawer}
-          onRequestChange={(openDrawer) => this.setState({openDrawer})}
-        >
-          <MenuItem
-            key='workList'
-            rightIcon={<ArrowDropDown />}
-            primaryTogglesNestedList={true}
-            nestedItems={[
-              <MenuItem key='workList0' primaryText="Grid lines" checked={true} />,
-              <MenuItem key='workList1' primaryText="Page breaks" insetChildren={true} />,
-              <MenuItem key='workList2' primaryText="Rules" checked={true} />,
-            ]}
-            >Work Experience</MenuItem>
-          <MenuItem
-            key='projectList'
-            rightIcon={<ArrowDropDown />}
-            primaryTogglesNestedList={true}
-            nestedItems={[
-              <MenuItem key='projectList0' primaryText="Grid lines" checked={true} />,
-              <MenuItem key='projectList1' primaryText="Page breaks" insetChildren={true} />,
-              <MenuItem key='projectList2' primaryText="Rules" checked={true} />,
-            ]}
-          >Project Experience</MenuItem>
-          <MenuItem
-            key='otherList'
-            rightIcon={<ArrowDropDown />}
-            primaryTogglesNestedList={true}
-            nestedItems={[
-              <MenuItem key='otherList0' primaryText="Grid lines" checked={true} />,
-              <MenuItem key='otherList1' primaryText="Page breaks" insetChildren={true} />,
-              <MenuItem key='otherList2' primaryText="Rules" checked={true} />,
-            ]}
-            >Other Experience</MenuItem>
-        </Drawer>
+
         <div className='modalContent'>
 
           <p>Test Content</p>

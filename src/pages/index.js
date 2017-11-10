@@ -20,6 +20,11 @@ import ReactModal from 'react-modal';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import MaterialContent from '../components/materialContent';
 
+// Drawer imports
+import Drawer from 'material-ui/Drawer';
+import MenuItem from 'material-ui/MenuItem';
+import ArrowDropDown from 'material-ui/svg-icons/navigation/expand-more';
+
 class Resume extends Component {
 
   constructor(props) {
@@ -28,12 +33,16 @@ class Resume extends Component {
     this.state = {
       showModal: false,
       modalTitle: '',
-      modalContent: ''
+      modalContent: '',
+      openDrawer: false
      };
 
     this.handleOpenModal = this.handleOpenModal.bind(this);
     this.handleCloseModal = this.handleCloseModal.bind(this);
   }
+
+  handleDrawerToggle = () => this.setState({openDrawer: !this.state.openDrawer});
+  handleDrawerClose = () => this.setState({openDrawer: false});
 
   // Modal Functions
   switchModalContent (title) {
@@ -250,11 +259,51 @@ class Resume extends Component {
            onRequestClose={this.handleCloseModal}
         >
           <MuiThemeProvider>
-            <MaterialContent
-              closeModal={this.handleCloseModal}
-              projectTitle={this.state.modalTitle}
-              projectContent={this.state.modalContent}
-            />
+            <div>
+              <MaterialContent
+                closeModal={this.handleCloseModal}
+                toggleDrawer={this.handleDrawerToggle}
+                projectTitle={this.state.modalTitle}
+                projectContent={this.state.modalContent}
+              />
+              <Drawer
+                docked={false}
+                width={300}
+                open={this.state.openDrawer}
+                onRequestChange={(openDrawer) => this.setState({openDrawer})}
+              >
+                <MenuItem
+                  key='workList'
+                  rightIcon={<ArrowDropDown />}
+                  primaryTogglesNestedList={true}
+                  nestedItems={[
+                    <MenuItem key='workList0' primaryText="Grid lines" checked={true} />,
+                    <MenuItem key='workList1' primaryText="Page breaks" insetChildren={true} />,
+                    <MenuItem key='workList2' primaryText="Rules" checked={true} />,
+                  ]}
+                  >Work Experience</MenuItem>
+                <MenuItem
+                  key='projectList'
+                  rightIcon={<ArrowDropDown />}
+                  primaryTogglesNestedList={true}
+                  nestedItems={[
+                    <MenuItem key='projectList0' primaryText="Grid lines" checked={true} />,
+                    <MenuItem key='projectList1' primaryText="Page breaks" insetChildren={true} />,
+                    <MenuItem key='projectList2' primaryText="Rules" checked={true} />,
+                  ]}
+                >Project Experience</MenuItem>
+                <MenuItem
+                  key='otherList'
+                  rightIcon={<ArrowDropDown />}
+                  primaryTogglesNestedList={true}
+                  nestedItems={[
+                    <MenuItem key='otherList0' primaryText="Grid lines" checked={true} />,
+                    <MenuItem key='otherList1' primaryText="Page breaks" insetChildren={true} />,
+                    <MenuItem key='otherList2' primaryText="Rules" checked={true} />,
+                  ]}
+                  >Other Experience</MenuItem>
+              </Drawer>
+            </div>
           </MuiThemeProvider>
           {/* <h2 ref={subtitle => this.subtitle = subtitle}>Hello</h2>
 
