@@ -22,6 +22,7 @@ const closeIcon = <NavigationClose />;
 // Drawer imports
 import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
+import ArrowDropDown from 'material-ui/svg-icons/navigation/expand-more';
 
 
 class MyAwesomeReactComponent extends Component {
@@ -66,12 +67,40 @@ class MyAwesomeReactComponent extends Component {
         </AppBar>
         <Drawer
           docked={false}
-          width={200}
+          width={300}
           open={this.state.openDrawer}
           onRequestChange={(openDrawer) => this.setState({openDrawer})}
         >
-          <MenuItem onClick={this.handleDrawerClose}>Menu Item</MenuItem>
-          <MenuItem onClick={this.handleDrawerClose}>Menu Item 2</MenuItem>
+          <MenuItem
+            key='workList'
+            rightIcon={<ArrowDropDown />}
+            primaryTogglesNestedList={true}
+            nestedItems={[
+              <MenuItem key='workList0' primaryText="Grid lines" checked={true} />,
+              <MenuItem key='workList1' primaryText="Page breaks" insetChildren={true} />,
+              <MenuItem key='workList2' primaryText="Rules" checked={true} />,
+            ]}
+            >Work Experience</MenuItem>
+          <MenuItem
+            key='projectList'
+            rightIcon={<ArrowDropDown />}
+            primaryTogglesNestedList={true}
+            nestedItems={[
+              <MenuItem key='projectList0' primaryText="Grid lines" checked={true} />,
+              <MenuItem key='projectList1' primaryText="Page breaks" insetChildren={true} />,
+              <MenuItem key='projectList2' primaryText="Rules" checked={true} />,
+            ]}
+          >Project Experience</MenuItem>
+          <MenuItem
+            key='otherList'
+            rightIcon={<ArrowDropDown />}
+            primaryTogglesNestedList={true}
+            nestedItems={[
+              <MenuItem key='otherList0' primaryText="Grid lines" checked={true} />,
+              <MenuItem key='otherList1' primaryText="Page breaks" insetChildren={true} />,
+              <MenuItem key='otherList2' primaryText="Rules" checked={true} />,
+            ]}
+            >Other Experience</MenuItem>
         </Drawer>
         <div className='modalContent'>
 
