@@ -13,7 +13,7 @@ class Interact extends Component {
   }
 
   handleOpenModal () {
-    this.props.innerOpenModal()
+    this.props.innerOpenModal(this.props.title)
   }
 
 

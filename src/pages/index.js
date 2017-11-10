@@ -35,7 +35,9 @@ class Resume extends Component {
     this.handleCloseModal = this.handleCloseModal.bind(this);
   }
 
-  handleOpenModal () {
+  handleOpenModal (title) {
+    this.setState({ modalTitle: title });
+    this.setState({ modalContent: 'test' })
     this.fadeOut();
     this.fadeIn(true);
   }
@@ -215,7 +217,8 @@ class Resume extends Component {
           <MuiThemeProvider>
             <MaterialContent
               closeModal={this.handleCloseModal}
-              projectTitle={this.props.title}
+              projectTitle={this.state.modalTitle}
+              projectContent={this.state.modalContent}
             />
           </MuiThemeProvider>
           {/* <h2 ref={subtitle => this.subtitle = subtitle}>Hello</h2>

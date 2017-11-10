@@ -74,6 +74,7 @@ class MyAwesomeReactComponent extends Component {
           <MenuItem onClick={this.handleDrawerClose}>Menu Item 2</MenuItem>
         </Drawer>
         <div className='modalContent'>
+          
           <p>Test Content</p>
           <p>Test Content</p>
           <p>Test Content</p>
