@@ -133,6 +133,7 @@ ul.dashed > li.indent {
 .ReactModal__Content {
   // transition: display 0.5s ease;
   padding: 0px !important;
+  height: 80%;
 }
 
 .ReactModal__Body--open {
@@ -143,5 +144,23 @@ ul.dashed > li.indent {
 
 // NavBar Styles
 .modalNavBar {
+  flex: 1 0 auto;
   background-color: #008AFF !important;
+  z-index: 100;
+}
+
+.modalBody {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.modalContent {
+  padding: 20px;
+  flex: 1 0 auto;
+}
+
+.stickyFooter {
+  flex-shrink: 0;
+  // padding: 20px;
 }

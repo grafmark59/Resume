@@ -59,9 +59,9 @@ class Interact extends Component {
               projectTitle={this.props.title}
             />
           </MuiThemeProvider>
-          <h2 ref={subtitle => this.subtitle = subtitle}>Hello</h2>
+          {/* <h2 ref={subtitle => this.subtitle = subtitle}>Hello</h2>
 
-          <button onClick={this.handleCloseModal}>Close Modal</button>
+          <button onClick={this.handleCloseModal}>Close Modal</button> */}
         </ReactModal>
       </div>
     );
