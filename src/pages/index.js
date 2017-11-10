@@ -35,6 +35,12 @@ class Resume extends Component {
     this.handleCloseModal = this.handleCloseModal.bind(this);
   }
 
+  // Modal Functions
+  switchModalContent (title) {
+    this.setState({ modalTitle: title });
+    this.setState({ modalContent: 'test' })
+  }
+
   handleOpenModal (title) {
     this.setState({ modalTitle: title });
     this.setState({ modalContent: 'test' })
@@ -144,13 +150,24 @@ class Resume extends Component {
             <h2>Work Experience</h2>
             <Section>
               {
+                // Loops through the work experiences and creates interactive
+                // Sections to click on and open a modal
                 workData.work.map((job) =>
-                  <Interact key={job.key} title={job.position} innerOpenModal={this.handleOpenModal}>
-                    <h4><span>{job.position}</span> • {job.location} • {job.date}</h4>
+                  <Interact
+                    key={job.key}
+                    title={job.position}
+                    innerOpenModal={this.handleOpenModal}
+                    >
+                    <h4>
+                      <span>{job.position} </span>
+                       • {job.location} • {job.date}</h4>
                     <ul className='dashed'>
                       {
                         job.responsibilities.map((responsibility) =>
-                          <li key={responsibility.key} className={responsibility.className}>
+                          <li
+                            key={responsibility.key}
+                            className={responsibility.className}
+                            >
                             {responsibility.content}
                           </li>
                         )
@@ -164,13 +181,22 @@ class Resume extends Component {
             <h2>Project Experience</h2>
             <Section>
               {
+                // Loops through the project experiences and creates interactive
+                // Sections to click on and open a modal
                 projectData.projects.map((project) =>
-                  <Interact key={project.key} title={project.title} innerOpenModal={this.handleOpenModal}>
+                  <Interact
+                    key={project.key}
+                    title={project.title}
+                    innerOpenModal={this.handleOpenModal}
+                    >
                     <h4><span>{project.title}</span> • {project.date}</h4>
                     <ul className='dashed'>
                       {
                         project.responsibilities.map((responsibility) =>
-                          <li key={responsibility.key} className={responsibility.className}>
+                          <li
+                            key={responsibility.key}
+                            className={responsibility.className}
+                            >
                             {responsibility.content}
                           </li>
                         )
@@ -184,13 +210,22 @@ class Resume extends Component {
             <h2>Other Experiences</h2>
             <Section>
               {
+                // Loops through the other experiences and creates interactive
+                // Sections to click on and open a modal
                 otherData.other.map((obj) =>
-                  <Interact key={obj.key} title={obj.title} innerOpenModal={this.handleOpenModal}>
-                    <h4><span>{obj.title}</span> • {obj.location} • {obj.date}</h4>
+                  <Interact
+                    key={obj.key}
+                    title={obj.title}
+                    innerOpenModal={this.handleOpenModal}
+                    >
+                    <h4><span>{obj.title} </span>
+                    • {obj.location} • {obj.date}</h4>
                     <ul className='dashed'>
                       {
                         obj.responsibilities.map((responsibility) =>
-                          <li key={responsibility.key} className={responsibility.className}>
+                          <li
+                            key={responsibility.key}
+                            className={responsibility.className}>
                             {responsibility.content}
                           </li>
                         )
