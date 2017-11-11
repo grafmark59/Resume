@@ -24,6 +24,8 @@ import MaterialContent from '../components/materialContent';
 import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
 import ArrowDropDown from 'material-ui/svg-icons/navigation/expand-more';
+import Divider from 'material-ui/Divider';
+import AppBar from 'material-ui/AppBar';
 
 class Resume extends Component {
 
@@ -52,7 +54,11 @@ class Resume extends Component {
 
   switchModalFromMenu (title) {
     this.handleDrawerClose();
-    this.switchModalContent(title);
+    setTimeout(function() {
+      this.switchModalContent(title);
+    }.bind(this), 200);
+    this.fadeOut();
+    this.fadeIn();
   }
 
   handleOpenModal (title) {
@@ -277,10 +283,21 @@ class Resume extends Component {
                 open={this.state.openDrawer}
                 onRequestChange={(openDrawer) => this.setState({openDrawer})}
               >
+                <AppBar
+                  title='Resume'
+                  className="modalNavBar"
+                  showMenuIconButton={false}
+                />
                 <MenuItem
                   key='workList'
                   rightIcon={<ArrowDropDown />}
                   primaryTogglesNestedList={true}
+                  style={
+                    {
+                      color: '#008AFF',
+                      backgroundColor: '#white'
+                    }
+                  }
                   nestedItems={
                     // Loops through the jobs
                     workData.work.map((job, i) =>
@@ -290,6 +307,7 @@ class Resume extends Component {
                         onClick={() => this.switchModalFromMenu(job.fullContent.fullTitle)}
                         innerDivStyle= {
                           {
+                            color: 'rgb(82, 86, 89)',
                             textOverflow: 'ellipsis',
                             whiteSpace: 'nowrap',
                             overflow: 'hidden'
@@ -301,10 +319,23 @@ class Resume extends Component {
                     )
                   }
                   >Work Experience</MenuItem>
+                <Divider
+                  style={
+                    {
+                      marginTop: '0px'
+                    }
+                  }
+                />
                 <MenuItem
                   key='projectList'
                   rightIcon={<ArrowDropDown />}
                   primaryTogglesNestedList={true}
+                  style={
+                    {
+                      color: '#008AFF',
+                      backgroundColor: 'white'
+                    }
+                  }
                   nestedItems={
                     // Loops through the projects
                     projectData.projects.map((project, i) =>
@@ -314,6 +345,7 @@ class Resume extends Component {
                         onClick={() => this.switchModalFromMenu(project.fullContent.fullTitle)}
                         innerDivStyle= {
                           {
+                            color: 'rgb(82, 86, 89)',
                             textOverflow: 'ellipsis',
                             whiteSpace: 'nowrap',
                             overflow: 'hidden'
@@ -325,10 +357,23 @@ class Resume extends Component {
                     )
                   }
                 >Project Experience</MenuItem>
+                <Divider
+                  style={
+                  {
+                    marginTop: '0px'
+                  }
+                }
+                />
                 <MenuItem
                   key='otherList'
                   rightIcon={<ArrowDropDown />}
                   primaryTogglesNestedList={true}
+                  style={
+                    {
+                      color: '#008AFF',
+                      backgroundColor: 'white'
+                    }
+                  }
                   nestedItems={
                     // Loops through the projects
                     otherData.other.map((obj, i) =>
@@ -338,6 +383,7 @@ class Resume extends Component {
                         onClick={() => this.switchModalFromMenu(obj.fullContent.fullTitle)}
                         innerDivStyle= {
                           {
+                            color: 'rgb(82, 86, 89)',
                             textOverflow: 'ellipsis',
                             whiteSpace: 'nowrap',
                             overflow: 'hidden'
@@ -349,6 +395,13 @@ class Resume extends Component {
                     )
                   }
                   >Other Experience</MenuItem>
+                  <Divider
+                    style={
+                    {
+                      marginTop: '0px'
+                    }
+                  }
+                 />
               </Drawer>
             </div>
           </MuiThemeProvider>
