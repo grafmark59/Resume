@@ -30,6 +30,7 @@ const styles = {
     display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'space-around',
+    alignItems: 'flex-start'
   },
   gridList: {
     width: 500,
@@ -78,8 +79,9 @@ class MyAwesomeReactComponent extends Component {
         >
 
         </AppBar>
-
         <div className='modalContent'>
+          {/* Logo */}
+
           {/* Text */}
           <div className='flexChild'>
             <span style={{whiteSpace: "pre-wrap"}}>

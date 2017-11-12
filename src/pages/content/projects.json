@@ -33,7 +33,8 @@
             "./images/projects/bchs/home.png",
             "./images/projects/bchs/home.png",
             "./images/projects/bchs/m-home.png"
-          ]
+          ],
+          "logo": "./images/projects/bchs/logo.png"
         }
       }
     },
