@@ -21,6 +21,7 @@ const closeIcon = <NavigationClose color="#008AFF" />;
 
 
 
+
 class MyAwesomeReactComponent extends Component {
   constructor(props) {
     super(props);
@@ -66,12 +67,16 @@ class MyAwesomeReactComponent extends Component {
           {/* Text */}
           <div>
             <span style={{whiteSpace: "pre-wrap"}}>
-              { this.props.projectContent }
+              { this.props.projectContent.text }
             </span>
           </div>
           {/* Pictures */}
           <div>
-            Test content
+            {
+              this.props.projectContent.pictures.map((picture) =>
+                <img src={require(`${picture}`)} alt="picture" />
+              )
+            }
           </div>
 
           {/* <RaisedButton backgroundColor="#008AFF" label="Close" onClick={this.handleCloseModal} /> */}

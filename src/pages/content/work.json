@@ -31,7 +31,12 @@
         "fullTitle": "Technology Consultant",
         "employer": "Ministry of Education",
         "location": "Korror, Palau",
-        "content": ""
+        "content": {
+          "text": "",
+          "pictures": [
+            "./images/projects/bchs/test.png"
+          ]
+        }
       }
     },
     {
@@ -60,7 +65,12 @@
         "fullTitle": "Teaching Assistant",
         "employer": "Carnegie Mellon University",
         "location": "Pittsburgh, PA",
-        "content": ""
+        "content": {
+          "text": "",
+          "pictures": [
+            "./images/projects/bchs/test.png"
+          ]
+        }
       }
     },
     {
@@ -84,7 +94,12 @@
         "fullTitle": "Camp Counselor",
         "employer": "Bear Creek Camp",
         "location": "Bear Creek, PA",
-        "content": ""
+        "content": {
+          "text": "",
+          "pictures": [
+            "./images/projects/bchs/test.png"
+          ]
+        }
       }
     }
   ]

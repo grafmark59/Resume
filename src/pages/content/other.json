@@ -20,7 +20,12 @@
       "fullContent":{
         "fullTitle": "Study Abroad at the Technische Universität Dresden",
         "location": "Dresden, Germany",
-        "content": ""
+        "content": {
+          "text": "",
+          "pictures": [
+            "./images/projects/bchs/test.png"
+          ]
+        }
       }
     },
     {
@@ -38,7 +43,12 @@
       "fullContent":{
         "fullTitle": "Technical Assisstant",
         "client": "Center for Pain Control",
-        "content": ""
+        "content": {
+          "text": "",
+          "pictures": [
+            "./images/projects/bchs/test.png"
+          ]
+        }
       }
     },
     {
@@ -61,7 +71,12 @@
       "fullContent":{
         "fullTitle": "Mission Trips",
         "location": "Antigua, Guatemala",
-        "content": ""
+        "content": {
+          "text": "",
+          "pictures": [
+            "./images/projects/bchs/test.png"
+          ]
+        }
       }
     }
   ]
