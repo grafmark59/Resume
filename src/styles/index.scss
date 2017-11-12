@@ -158,6 +158,13 @@ ul.dashed > li.indent {
 .modalContent {
   padding: 20px;
   flex: 1 0 auto;
+
+  display: flex;
+  align-items: center;
+
+  div {
+    flex: 1;
+  }
 }
 
 .stickyFooter {

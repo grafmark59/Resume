@@ -47,23 +47,23 @@ class Resume extends Component {
   handleDrawerClose = () => this.setState({openDrawer: false});
 
   // Modal Functions
-  switchModalContent (title) {
+  switchModalContent (title, content) {
     this.setState({ modalTitle: title });
-    this.setState({ modalContent: 'test' });
+    this.setState({ modalContent: content });
   }
 
-  switchModalFromMenu (title) {
+  switchModalFromMenu (title, content) {
     this.handleDrawerClose();
     setTimeout(function() {
-      this.switchModalContent(title);
+      this.switchModalContent(title,content);
     }.bind(this), 200);
     this.fadeOut();
     this.fadeIn();
   }
 
-  handleOpenModal (title) {
+  handleOpenModal (title, content) {
     this.setState({ modalTitle: title });
-    this.setState({ modalContent: 'test' })
+    this.setState({ modalContent: content })
     this.fadeOut();
     this.fadeIn(true);
   }
@@ -176,6 +176,7 @@ class Resume extends Component {
                   <Interact
                     key={job.key}
                     title={job.fullContent.fullTitle}
+                    content={job.fullContent.content}
                     innerOpenModal={this.handleOpenModal}
                     >
                     <h4>
@@ -207,6 +208,7 @@ class Resume extends Component {
                   <Interact
                     key={project.key}
                     title={project.fullContent.fullTitle}
+                    content={project.fullContent.content}
                     innerOpenModal={this.handleOpenModal}
                     >
                     <h4><span>{project.title}</span> • {project.date}</h4>
@@ -236,6 +238,7 @@ class Resume extends Component {
                   <Interact
                     key={obj.key}
                     title={obj.fullContent.fullTitle}
+                    content={obj.fullContent.content}
                     innerOpenModal={this.handleOpenModal}
                     >
                     <h4><span>{obj.title} </span>
@@ -304,7 +307,7 @@ class Resume extends Component {
                       <MenuItem
                         key={'workList'+i}
                         insetChildren={true}
-                        onClick={() => this.switchModalFromMenu(job.fullContent.fullTitle)}
+                        onClick={() => this.switchModalFromMenu(job.fullContent.fullTitle, job.fullContent.content)}
                         innerDivStyle= {
                           {
                             color: 'rgb(82, 86, 89)',
@@ -342,7 +345,7 @@ class Resume extends Component {
                       <MenuItem
                         key={'projectList'+i}
                         insetChildren={true}
-                        onClick={() => this.switchModalFromMenu(project.fullContent.fullTitle)}
+                        onClick={() => this.switchModalFromMenu(project.fullContent.fullTitle, project.fullContent.content)}
                         innerDivStyle= {
                           {
                             color: 'rgb(82, 86, 89)',
@@ -380,7 +383,7 @@ class Resume extends Component {
                       <MenuItem
                         key={'otherList'+i}
                         insetChildren={true}
-                        onClick={() => this.switchModalFromMenu(obj.fullContent.fullTitle)}
+                        onClick={() => this.switchModalFromMenu(obj.fullContent.fullTitle, obj.fullContent.content)}
                         innerDivStyle= {
                           {
                             color: 'rgb(82, 86, 89)',

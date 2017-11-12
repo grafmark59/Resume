@@ -63,31 +63,18 @@ class MyAwesomeReactComponent extends Component {
         </AppBar>
 
         <div className='modalContent'>
-          { this.props.projectContent }
-          <p>Test Content</p>
-          <p>Test Content</p>
-          <p>Test Content</p>
-          <p>Test Content</p>
-          <p>Test Content</p>
-          <p>Test Content</p>
-          <p>Test Content</p>
-          <p>Test Content</p>
-          <p>Test Content</p>
-          <p>Test Content</p>
-          <p>Test Content</p>
-          <p>Test Content</p>
-          <p>Test Content</p>
-          <p>Test Content</p>
-          <p>Test Content</p>
-          <p>Test Content</p>
-          <p>Test Content</p>
-          <p>Test Content</p>
-          <p>Test Content</p>
-          <p>Test Content</p>
+          {/* Text */}
+          <div>
+            <span style={{whiteSpace: "pre-wrap"}}>
+              { this.props.projectContent }
+            </span>
+          </div>
+          {/* Pictures */}
+          <div>
+            Test content
+          </div>
 
-
-
-          <RaisedButton backgroundColor="#008AFF" label="Close" onClick={this.handleCloseModal} />
+          {/* <RaisedButton backgroundColor="#008AFF" label="Close" onClick={this.handleCloseModal} /> */}
         </div>
         <footer className='stickyFooter'>
           <Paper zDepth={1}>
