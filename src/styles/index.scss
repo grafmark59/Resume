@@ -161,8 +161,9 @@ ul.dashed > li.indent {
 
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 
-  div {
+  .flexChild {
     flex: 1;
   }
 }

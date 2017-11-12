@@ -3,6 +3,11 @@ import ReactDOM from 'react-dom';
 import ReactModal from 'react-modal';
 import RaisedButton from 'material-ui/RaisedButton';
 
+// Grid imports
+import {GridList, GridTile} from 'material-ui/GridList';
+import Subheader from 'material-ui/Subheader';
+import StarBorder from 'material-ui/svg-icons/toggle/star-border';
+
 // NavBar imports
 import AppBar from 'material-ui/AppBar';
 import IconButton from 'material-ui/IconButton';
@@ -20,7 +25,18 @@ const nearbyIcon = <IconLocationOn />;
 const closeIcon = <NavigationClose color="#008AFF" />;
 
 
-
+const styles = {
+  root: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'space-around',
+  },
+  gridList: {
+    width: 500,
+    height: 450,
+    overflowY: 'auto',
+  },
+};
 
 class MyAwesomeReactComponent extends Component {
   constructor(props) {
@@ -65,18 +81,42 @@ class MyAwesomeReactComponent extends Component {
 
         <div className='modalContent'>
           {/* Text */}
-          <div>
+          <div className='flexChild'>
             <span style={{whiteSpace: "pre-wrap"}}>
               { this.props.projectContent.text }
             </span>
           </div>
           {/* Pictures */}
-          <div>
-            {
-              this.props.projectContent.pictures.map((picture) =>
-                <img src={require(`${picture}`)} alt="picture" />
-              )
-            }
+          <div className='flexChild'>
+            <div style={styles.root}>
+              <GridList
+                cols={2}
+                cellHeight={200}
+                padding={1}
+                style={styles.gridList}
+              >
+                <Subheader>December</Subheader>
+                {
+                  this.props.projectContent.pictures.map((picture) =>
+                  <GridTile
+                    //key={tile.img}
+                    title="Test"
+                    subtitle={<span>by <b>Test</b></span>}
+                    actionIcon={<IconButton><StarBorder color="white" /></IconButton>}
+                    actionPosition="left"
+                    titlePosition="top"
+                    titleBackground="linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%)"
+                    cols={1}
+                    rows={1}
+                    // cols={tile.featured ? 2 : 1}
+                    // rows={tile.featured ? 2 : 1}
+                  >
+                    <img src={require(`${picture}`)} alt="picture" />
+                  </GridTile>
+                  )
+                }
+              </GridList>
+            </div>
           </div>
 
           {/* <RaisedButton backgroundColor="#008AFF" label="Close" onClick={this.handleCloseModal} /> */}
