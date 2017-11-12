@@ -13,6 +13,8 @@ import AppBar from 'material-ui/AppBar';
 import IconButton from 'material-ui/IconButton';
 import NavigationClose from 'material-ui/svg-icons/navigation/close';
 
+import Tabs from 'react-simpletabs';
+
 // BottomNavigation imports
 import FontIcon from 'material-ui/FontIcon';
 import Paper from 'material-ui/Paper';
@@ -88,37 +90,74 @@ class MyAwesomeReactComponent extends Component {
               { this.props.projectContent.text }
             </span>
           </div>
+
           {/* Pictures */}
           <div className='flexChild'>
-            <div style={styles.root}>
-              <GridList
-                cols={2}
-                cellHeight={200}
-                padding={1}
-                style={styles.gridList}
-              >
-                <Subheader>December</Subheader>
-                {
-                  this.props.projectContent.pictures.map((picture) =>
-                  <GridTile
-                    //key={tile.img}
-                    title="Test"
-                    subtitle={<span>by <b>Test</b></span>}
-                    actionIcon={<IconButton><StarBorder color="white" /></IconButton>}
-                    actionPosition="left"
-                    titlePosition="top"
-                    titleBackground="linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%)"
-                    cols={1}
-                    rows={1}
-                    // cols={tile.featured ? 2 : 1}
-                    // rows={tile.featured ? 2 : 1}
+            <Tabs>
+              <Tabs.Panel title='Desktop'>
+                <div style={styles.root}>
+                  <GridList
+                    cols={2}
+                    cellHeight={200}
+                    padding={1}
+                    style={styles.gridList}
                   >
-                    <img src={require(`${picture}`)} alt="picture" />
-                  </GridTile>
-                  )
-                }
-              </GridList>
-            </div>
+                    <Subheader>Desktop</Subheader>
+                    {
+                      this.props.projectContent.pictures.map((picture) =>
+                      <GridTile
+                        //key={tile.img}
+                        title="Test"
+                        subtitle={<span>by <b>Test</b></span>}
+                        actionIcon={<IconButton><StarBorder color="white" /></IconButton>}
+                        actionPosition="left"
+                        titlePosition="top"
+                        titleBackground="linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%)"
+                        cols={1}
+                        rows={1}
+                        // cols={tile.featured ? 2 : 1}
+                        // rows={tile.featured ? 2 : 1}
+                      >
+                        <img src={require(`${picture}`)} alt="picture" />
+                      </GridTile>
+                      )
+                    }
+                  </GridList>
+                </div>
+              </Tabs.Panel>
+              <Tabs.Panel title='Mobile'>
+                <div style={styles.root}>
+                  <GridList
+                    cols={2}
+                    cellHeight={200}
+                    padding={1}
+                    style={styles.gridList}
+                  >
+                    <Subheader>Mobile</Subheader>
+                    {
+                      this.props.projectContent.pictures.map((picture) =>
+                      <GridTile
+                        //key={tile.img}
+                        title="Test"
+                        subtitle={<span>by <b>Test</b></span>}
+                        actionIcon={<IconButton><StarBorder color="white" /></IconButton>}
+                        actionPosition="left"
+                        titlePosition="top"
+                        titleBackground="linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%)"
+                        cols={1}
+                        rows={1}
+                        // cols={tile.featured ? 2 : 1}
+                        // rows={tile.featured ? 2 : 1}
+                      >
+                        <img src={require(`${picture}`)} alt="picture" />
+                      </GridTile>
+                      )
+                    }
+                  </GridList>
+                </div>
+              </Tabs.Panel>
+            </Tabs>
+
           </div>
 
           {/* <RaisedButton backgroundColor="#008AFF" label="Close" onClick={this.handleCloseModal} /> */}
