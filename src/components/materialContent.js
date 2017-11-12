@@ -35,7 +35,7 @@ const styles = {
     alignItems: 'flex-start'
   },
   gridList: {
-    width: 500,
+    width: 450,
     height: 450,
     overflowY: 'auto',
   },
@@ -82,13 +82,16 @@ class MyAwesomeReactComponent extends Component {
 
         </AppBar>
         <div className='modalContent'>
-          {/* Logo */}
 
           {/* Text */}
           <div className='flexChild'>
-            <span style={{whiteSpace: "pre-wrap"}}>
-              { this.props.projectContent.text }
-            </span>
+            <div style={styles.root}>
+              <div style={styles.gridList}>
+                <span style={{whiteSpace: "pre-wrap"}}>
+                  { this.props.projectContent.text }
+                </span>
+              </div>
+            </div>
           </div>
 
           {/* Pictures */}
@@ -98,27 +101,24 @@ class MyAwesomeReactComponent extends Component {
                 <div style={styles.root}>
                   <GridList
                     cols={2}
-                    cellHeight={200}
+                    cellHeight={225}
                     padding={1}
                     style={styles.gridList}
                   >
-                    <Subheader>Desktop</Subheader>
                     {
-                      this.props.projectContent.pictures.map((picture) =>
+                      this.props.projectContent.pictures.filter(function(picture) {
+                          return !picture.mobile;
+                        }).map((picture) =>
                       <GridTile
-                        //key={tile.img}
+                        key={picture.src}
                         title="Test"
-                        subtitle={<span>by <b>Test</b></span>}
-                        actionIcon={<IconButton><StarBorder color="white" /></IconButton>}
                         actionPosition="left"
                         titlePosition="top"
                         titleBackground="linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%)"
-                        cols={1}
+                        cols={2}
                         rows={1}
-                        // cols={tile.featured ? 2 : 1}
-                        // rows={tile.featured ? 2 : 1}
                       >
-                        <img src={require(`${picture}`)} alt="picture" />
+                        <img src={require(`${picture.src}`)} alt="picture" />
                       </GridTile>
                       )
                     }
@@ -133,23 +133,20 @@ class MyAwesomeReactComponent extends Component {
                     padding={1}
                     style={styles.gridList}
                   >
-                    <Subheader>Mobile</Subheader>
                     {
-                      this.props.projectContent.pictures.map((picture) =>
+                      this.props.projectContent.pictures.filter(function(picture) {
+                          return picture.mobile;
+                        }).map((picture) =>
                       <GridTile
-                        //key={tile.img}
+                        key={picture.src}
                         title="Test"
-                        subtitle={<span>by <b>Test</b></span>}
-                        actionIcon={<IconButton><StarBorder color="white" /></IconButton>}
                         actionPosition="left"
                         titlePosition="top"
                         titleBackground="linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%)"
                         cols={1}
-                        rows={1}
-                        // cols={tile.featured ? 2 : 1}
-                        // rows={tile.featured ? 2 : 1}
+                        rows={2}
                       >
-                        <img src={require(`${picture}`)} alt="picture" />
+                        <img src={require(`${picture.src}`)} alt="picture" />
                       </GridTile>
                       )
                     }
