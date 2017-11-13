@@ -111,7 +111,7 @@ class MyAwesomeReactComponent extends Component {
                         }).map((picture) =>
                       <GridTile
                         key={picture.src}
-                        title="Test"
+                        title={picture.title}
                         actionPosition="left"
                         titlePosition="top"
                         titleBackground="linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%)"
@@ -139,7 +139,7 @@ class MyAwesomeReactComponent extends Component {
                         }).map((picture) =>
                       <GridTile
                         key={picture.src}
-                        title="Test"
+                        title={picture.title}
                         actionPosition="left"
                         titlePosition="top"
                         titleBackground="linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%)"

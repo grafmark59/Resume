@@ -34,7 +34,11 @@
         "content": {
           "text": "",
           "pictures": [
-            "./images/projects/bchs/test.png"
+            {
+              "title": "Home",
+              "mobile": false,
+              "src": "./images/projects/bchs/home.png"
+            }
           ]
         }
       }
@@ -68,7 +72,11 @@
         "content": {
           "text": "",
           "pictures": [
-            "./images/projects/bchs/test.png"
+            {
+              "title": "Home",
+              "mobile": false,
+              "src": "./images/projects/bchs/home.png"
+            }
           ]
         }
       }
@@ -97,7 +105,11 @@
         "content": {
           "text": "",
           "pictures": [
-            "./images/projects/bchs/test.png"
+            {
+              "title": "Home",
+              "mobile": false,
+              "src": "./images/projects/bchs/home.png"
+            }
           ]
         }
       }
