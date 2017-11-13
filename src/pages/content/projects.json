@@ -23,8 +23,9 @@
       ],
       "fullContent":{
         "fullTitle": "Beaver County Humance Society Foster Portal",
-        "course": "67-373: Software Development Project",
         "content": {
+          "course": "67-373: Software Development Project",
+          "link": "http://foster.beavercountyhumanesociety.org/",
           "text": "My Senior Spring, I took 67-373: Software Development Project, a course which places IS students into groups of three or four and has them work with non-profits to analyze processes and (usually) develop software solutions to improve their workplace. \n\nThis course was normally the Information Systems course that we should take during our Junior Spring; however, I was studying abroad at that time, and so I took a course at TU Dresden to replace 373. That being said, it was an experience that I really wanted to have, so after some discussion with my advisor, I was allowed to take it my senior year (thanks Gary!).\n\nNow this course is dedicated to two things: allowing students to build real world experience, and helping improve the community, from local Pittsburgh non-profits to schools across the country (one group had the opportunity to work with a school in Alaska).\n\nI, along with two of my classmates, had the opportunity to be paired with the Beaver County Humane Society. The thing that made this project unique was that it was actually the continuation of a project that was started in 2016, so going into it, our client had a strong idea of what they needed, as they had a compiled list of bugs that had to be fixed. Therefore, we spent a majority of our semester working on these bugs. However, there was one drastic problem that we noticed existing in the application, and that was the total lack of design put into the project, so this is where I took the lead.\n\nHaving just worked on a few personal projects with Website Design, most of the topics were still fresh in my mind. I began the redesign by exploring existing static theme ideas and using this research to build them a real landing page. From here, it was a process of going through the existing content and making it match the homepage design. But I went even further. Near the beginning they had discussed the idea of building an app for their Foster Portal. I addressed this by making the entire application mobile friendly and editing the search-bars to turn into popout menus to make the overall experience more friendly to mobile. \n\nEspecially near the end of the semester, I put many more hours in than was required, but it was worth it. I was able to enhance the project to be something that truly had the BCHS stamp on it. These were wonderful people and they deserved a wonderful project that they can use to save lives.",
           "categories": [
             "desktop",
@@ -93,8 +94,8 @@
       ],
       "fullContent":{
         "fullTitle": "CMU Soundbytes Website",
-        "client": "Soundbytes A Cappella Group",
         "content": {
+          "client": "Soundbytes A Cappella Group",
           "text": "",
           "categories": [
             "desktop"
@@ -137,8 +138,8 @@
       ],
       "fullContent":{
         "fullTitle": "CMU Safety Pin",
-        "course": "67475: Innovation in Information Systems",
         "content": {
+          "course": "67-475: Innovation in Information Systems",
           "text": "",
           "categories": [
             "mobile",

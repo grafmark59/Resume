@@ -12,8 +12,10 @@ import StarBorder from 'material-ui/svg-icons/toggle/star-border';
 import AppBar from 'material-ui/AppBar';
 import IconButton from 'material-ui/IconButton';
 import NavigationClose from 'material-ui/svg-icons/navigation/close';
+import Link from 'material-ui/svg-icons/content/link';
 
 import Tabs from 'react-simpletabs';
+import FloatingActionButton from 'material-ui/FloatingActionButton';
 
 // BottomNavigation imports
 import FontIcon from 'material-ui/FontIcon';
@@ -24,6 +26,7 @@ import IconLocationOn from 'material-ui/svg-icons/communication/location-on';
 const recentsIcon = <FontIcon className="material-icons">restore</FontIcon>;
 const favoritesIcon = <FontIcon className="material-icons">favorite</FontIcon>;
 const nearbyIcon = <IconLocationOn />;
+const linkIcon = <NavigationClose color="#008AFF" />;//<Link color="black" hoverColor="#008AFF"/>;
 const closeIcon = <NavigationClose color="#008AFF" />;
 
 
@@ -70,6 +73,19 @@ class MyAwesomeReactComponent extends Component {
   }
 
   render() {
+    var link;
+    if (this.props.projectContent.link) {
+        link = (
+          <FloatingActionButton
+            className='linkButton'
+            href={this.props.projectContent.link}
+            mini={true} backgroundColor="#008AFF"
+            target='_blank'>
+            <Link />
+          </FloatingActionButton>
+        );
+      }
+
     return (
       <div className='modalBody'>
         <AppBar
@@ -81,10 +97,25 @@ class MyAwesomeReactComponent extends Component {
         >
 
         </AppBar>
+
         <div className='modalContent'>
 
           {/* Text */}
           <div className='flexChild'>
+            <div className='logo'>
+              <div className='logoText'>
+                <h2>
+                  {this.props.projectContent.client}
+                  {this.props.projectContent.course}
+                </h2>
+              </div>
+              <div className='logoLink'>
+                <h2>
+                  {link}
+                </h2>
+              </div>
+
+            </div>
             <div style={styles.root}>
               <div style={styles.gridList}>
                 <span style={{whiteSpace: "pre-wrap"}}>
