@@ -33,10 +33,13 @@
         "location": "Korror, Palau",
         "content": {
           "text": "",
+          "categories": [
+            "desktop"
+          ],
           "pictures": [
             {
               "title": "Home",
-              "mobile": false,
+              "category": "desktop",
               "src": "./images/projects/bchs/home.png"
             }
           ]
@@ -71,10 +74,13 @@
         "location": "Pittsburgh, PA",
         "content": {
           "text": "",
+          "categories": [
+            "desktop"
+          ],
           "pictures": [
             {
               "title": "Home",
-              "mobile": false,
+              "category": "desktop",
               "src": "./images/projects/bchs/home.png"
             }
           ]
@@ -104,10 +110,13 @@
         "location": "Bear Creek, PA",
         "content": {
           "text": "",
+          "categories": [
+            "desktop"
+          ],
           "pictures": [
             {
               "title": "Home",
-              "mobile": false,
+              "category": "desktop",
               "src": "./images/projects/bchs/home.png"
             }
           ]

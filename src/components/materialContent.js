@@ -97,62 +97,38 @@ class MyAwesomeReactComponent extends Component {
           {/* Pictures */}
           <div className='flexChild'>
             <Tabs>
-              <Tabs.Panel title='Desktop'>
-                <div style={styles.root}>
-                  <GridList
-                    cols={2}
-                    cellHeight={225}
-                    padding={1}
-                    style={styles.gridList}
-                  >
-                    {
-                      this.props.projectContent.pictures.filter(function(picture) {
-                          return !picture.mobile;
-                        }).map((picture) =>
-                      <GridTile
-                        key={picture.src}
-                        title={picture.title}
-                        actionPosition="left"
-                        titlePosition="top"
-                        titleBackground="linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%)"
-                        cols={2}
-                        rows={1}
-                      >
-                        <img src={require(`${picture.src}`)} alt="picture" />
-                      </GridTile>
-                      )
-                    }
-                  </GridList>
-                </div>
-              </Tabs.Panel>
-              <Tabs.Panel title='Mobile'>
-                <div style={styles.root}>
-                  <GridList
-                    cols={2}
-                    cellHeight={200}
-                    padding={1}
-                    style={styles.gridList}
-                  >
-                    {
-                      this.props.projectContent.pictures.filter(function(picture) {
-                          return picture.mobile;
-                        }).map((picture) =>
-                      <GridTile
-                        key={picture.src}
-                        title={picture.title}
-                        actionPosition="left"
-                        titlePosition="top"
-                        titleBackground="linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%)"
-                        cols={1}
-                        rows={2}
-                      >
-                        <img src={require(`${picture.src}`)} alt="picture" />
-                      </GridTile>
-                      )
-                    }
-                  </GridList>
-                </div>
-              </Tabs.Panel>
+              {
+                this.props.projectContent.categories.map((category) =>
+                <Tabs.Panel title={category}>
+                  <div style={styles.root}>
+                    <GridList
+                      cols={2}
+                      cellHeight={225}
+                      padding={1}
+                      style={styles.gridList}
+                    >
+                      {
+                        this.props.projectContent.pictures.filter(function(picture) {
+                            return category===picture.category;
+                          }).map((picture) =>
+                        <GridTile
+                          key={picture.src}
+                          title={picture.title}
+                          actionPosition="left"
+                          titlePosition="top"
+                          titleBackground="linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%)"
+                          cols={category==='mobile' ? 1 : 2}
+                          rows={category==='mobile' ? 2 : 1}
+                        >
+                          <img src={require(`${picture.src}`)} alt="picture" />
+                        </GridTile>
+                        )
+                      }
+                    </GridList>
+                  </div>
+                </Tabs.Panel>
+              )
+            }
             </Tabs>
 
           </div>

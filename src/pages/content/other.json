@@ -22,10 +22,13 @@
         "location": "Dresden, Germany",
         "content": {
           "text": "",
+          "categories": [
+            "desktop"
+          ],
           "pictures": [
             {
               "title": "Home",
-              "mobile": false,
+              "category": "desktop",
               "src": "./images/projects/bchs/home.png"
             }
           ]
@@ -49,10 +52,13 @@
         "client": "Center for Pain Control",
         "content": {
           "text": "",
+          "categories": [
+            "desktop"
+          ],
           "pictures": [
             {
               "title": "Home",
-              "mobile": false,
+              "category": "desktop",
               "src": "./images/projects/bchs/home.png"
             }
           ]
@@ -81,10 +87,13 @@
         "location": "Antigua, Guatemala",
         "content": {
           "text": "",
+          "categories": [
+            "desktop"
+          ],
           "pictures": [
             {
               "title": "Home",
-              "mobile": false,
+              "category": "desktop",
               "src": "./images/projects/bchs/home.png"
             }
           ]
