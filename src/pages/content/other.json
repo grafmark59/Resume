@@ -25,13 +25,23 @@
           "link": "https://tu-dresden.de/",
           "text": "",
           "categories": [
-            "desktop"
+            "pictures"
           ],
           "pictures": [
             {
-              "title": "Home",
-              "category": "desktop",
-              "src": "./images/projects/bchs/home.png"
+              "title": "",
+              "category": "pictures",
+              "src": "./images/other/tud/symbol.png"
+            },
+            {
+              "title": "Andreas-Pfitzmann-Bau",
+              "category": "pictures",
+              "src": "./images/other/tud/apb.png"
+            },
+            {
+              "title": "Beyer-Bau",
+              "category": "pictures",
+              "src": "./images/other/tud/bb.png"
             }
           ]
         }
@@ -92,13 +102,38 @@
           "location": "Antigua, Guatemala",
           "text": "",
           "categories": [
-            "desktop"
+            "pictures"
           ],
           "pictures": [
             {
-              "title": "Home",
-              "category": "desktop",
-              "src": "./images/projects/bchs/home.png"
+              "title": "Construction",
+              "category": "pictures",
+              "src": "./images/other/mission/construction.png"
+            },
+            {
+              "title": "Bending Metal Squares",
+              "category": "pictures",
+              "src": "./images/other/mission/squares.png"
+            },
+            {
+              "title": "Laying Foundation",
+              "category": "pictures",
+              "src": "./images/other/mission/foundation.png"
+            },
+            {
+              "title": "Lunch Break",
+              "category": "pictures",
+              "src": "./images/other/mission/lunch.png"
+            },
+            {
+              "title": "Progress",
+              "category": "pictures",
+              "src": "./images/other/mission/slide.png"
+            },
+            {
+              "title": "Previous Project",
+              "category": "pictures",
+              "src": "./images/other/mission/oldchurch.png"
             }
           ]
         }
