@@ -103,7 +103,17 @@
             {
               "title": "Home",
               "category": "desktop",
-              "src": "./images/projects/bchs/home.png"
+              "src": "./images/projects/soundbytes/landing.png"
+            },
+            {
+              "title": "Members",
+              "category": "desktop",
+              "src": "./images/projects/soundbytes/members.png"
+            },
+            {
+              "title": "Posts",
+              "category": "desktop",
+              "src": "./images/projects/soundbytes/posts.png"
             }
           ]
         }
