@@ -99,11 +99,14 @@ class MyAwesomeReactComponent extends Component {
             <Tabs>
               {
                 this.props.projectContent.categories.map((category) =>
-                <Tabs.Panel title={category}>
+                <Tabs.Panel
+                  key={category}
+                  title={category}
+                  >
                   <div style={styles.root}>
                     <GridList
                       cols={2}
-                      cellHeight={225}
+                      cellHeight={category==='mobile' ? 200 : 225}
                       padding={1}
                       style={styles.gridList}
                     >

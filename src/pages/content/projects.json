@@ -131,13 +131,29 @@
         "content": {
           "text": "",
           "categories": [
-            "desktop"
+            "mobile",
+            "development"
           ],
           "pictures": [
             {
-              "title": "Home",
-              "category": "desktop",
-              "src": "./images/projects/bchs/home.png"
+              "title": "Log In",
+              "category": "mobile",
+              "src": "./images/projects/safetypin/log-in.png"
+            },
+            {
+              "title": "Emergency Contacts",
+              "category": "mobile",
+              "src": "./images/projects/safetypin/emergency.png"
+            },
+            {
+              "title": "Crime Reports",
+              "category": "mobile",
+              "src": "./images/projects/safetypin/crimeReports.png"
+            },
+            {
+              "title": "Xcode",
+              "category": "development",
+              "src": "./images/projects/safetypin/xcode.png"
             }
           ]
         }
