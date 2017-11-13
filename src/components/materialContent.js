@@ -68,9 +68,7 @@ class MyAwesomeReactComponent extends Component {
     this.props.closeModal();
   }
 
-  componentDidMount() {
-
-  }
+  
 
   render() {
     var link;
