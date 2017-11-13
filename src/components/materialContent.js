@@ -68,7 +68,7 @@ class MyAwesomeReactComponent extends Component {
     this.props.closeModal();
   }
 
-  
+
 
   render() {
     var link;
@@ -112,7 +112,11 @@ class MyAwesomeReactComponent extends Component {
                   {link}
                 </h2>
               </div>
-
+            </div>
+            <div className='location'>
+              <h3>
+                {this.props.projectContent.location}
+              </h3>
             </div>
             <div style={styles.root}>
               <div style={styles.gridList}>
@@ -135,7 +139,7 @@ class MyAwesomeReactComponent extends Component {
                   <div style={styles.root}>
                     <GridList
                       cols={2}
-                      cellHeight={category==='mobile' ? 200 : 225}
+                      cellHeight={category==='mobile' ? 200 : (category==='tablet' ? 300 : 225)}
                       padding={1}
                       style={styles.gridList}
                     >

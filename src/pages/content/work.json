@@ -29,18 +29,54 @@
       ],
       "fullContent":{
         "fullTitle": "Technology Consultant",
-        "employer": "Ministry of Education",
-        "location": "Korror, Palau",
         "content": {
+          "client": "Ministry of Education",
+          "location": "Korror, Palau",
           "text": "",
           "categories": [
-            "desktop"
+            "desktop",
+            "tablet"
           ],
           "pictures": [
             {
-              "title": "Home",
+              "title": "Log-In",
               "category": "desktop",
-              "src": "./images/projects/bchs/home.png"
+              "src": "./images/work/palau/log-in.png"
+            },
+            {
+              "title": "Landing",
+              "category": "desktop",
+              "src": "./images/work/palau/landing.png"
+            },
+            {
+              "title": "Form",
+              "category": "desktop",
+              "src": "./images/work/palau/form.png"
+            },
+            {
+              "title": "Teacher's Observations",
+              "category": "desktop",
+              "src": "./images/work/palau/teacher.png"
+            },
+            {
+              "title": "Analysis",
+              "category": "desktop",
+              "src": "./images/work/palau/analysis.png"
+            },
+            {
+              "title": "Landing",
+              "category": "tablet",
+              "src": "./images/work/palau/m-landing.png"
+            },
+            {
+              "title": "Form",
+              "category": "tablet",
+              "src": "./images/work/palau/m-form.png"
+            },
+            {
+              "title": "Observation",
+              "category": "tablet",
+              "src": "./images/work/palau/m-observation.png"
             }
           ]
         }
@@ -70,18 +106,19 @@
       ],
       "fullContent":{
         "fullTitle": "Teaching Assistant",
-        "employer": "Carnegie Mellon University",
-        "location": "Pittsburgh, PA",
         "content": {
+          "client": "Carnegie Mellon University",
+          "location": "Pittsburgh, PA",
+          "link": "http://67272.cmuis.net/",
           "text": "",
           "categories": [
             "desktop"
           ],
           "pictures": [
             {
-              "title": "Home",
+              "title": "Landing Page",
               "category": "desktop",
-              "src": "./images/projects/bchs/home.png"
+              "src": "./images/work/272ta/ta-page.png"
             }
           ]
         }
@@ -106,18 +143,29 @@
       ],
       "fullContent":{
         "fullTitle": "Camp Counselor",
-        "employer": "Bear Creek Camp",
-        "location": "Bear Creek, PA",
         "content": {
+          "client": "Bear Creek Camp",
+          "location": "Bear Creek, PA",
+          "link": "http://bearcreekcamp.org/",
           "text": "",
           "categories": [
-            "desktop"
+            "pictures"
           ],
           "pictures": [
             {
-              "title": "Home",
-              "category": "desktop",
-              "src": "./images/projects/bchs/home.png"
+              "title": "Webpage",
+              "category": "pictures",
+              "src": "./images/work/bcc/website.png"
+            },
+            {
+              "title": "Coworkers",
+              "category": "pictures",
+              "src": "./images/work/bcc/sylvia.png"
+            },
+            {
+              "title": "Brave Little Toaster",
+              "category": "pictures",
+              "src": "./images/work/bcc/toaster.png"
             }
           ]
         }

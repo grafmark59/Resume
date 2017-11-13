@@ -18,9 +18,11 @@
         }
       ],
       "fullContent":{
-        "fullTitle": "Study Abroad at the Technische Universität Dresden",
-        "location": "Dresden, Germany",
+        "fullTitle": "Study Abroad",
         "content": {
+          "course": "Technische Universität Dresden",
+          "location": "Dresden, Germany",
+          "link": "https://tu-dresden.de/",
           "text": "",
           "categories": [
             "desktop"
@@ -49,8 +51,10 @@
       ],
       "fullContent":{
         "fullTitle": "Technical Assisstant",
-        "client": "Center for Pain Control",
         "content": {
+          "client": "Center for Pain Control",
+          "location": "Wyomissing, PA",
+          "link": "http://www.centerforpaincontrol.net/",
           "text": "",
           "categories": [
             "desktop"
@@ -84,8 +88,8 @@
       ],
       "fullContent":{
         "fullTitle": "Mission Trips",
-        "location": "Antigua, Guatemala",
         "content": {
+          "location": "Antigua, Guatemala",
           "text": "",
           "categories": [
             "desktop"
