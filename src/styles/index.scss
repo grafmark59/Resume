@@ -168,6 +168,8 @@ ul.dashed > li.indent {
   }
 }
 
+// Modal Text Styling
+
 .logo {
   display: flex;
   align-items:center;
@@ -196,10 +198,14 @@ ul.dashed > li.indent {
   margin-left: 50px;
 }
 
+// Footer Styling
+
 .stickyFooter {
   flex-shrink: 0;
   // padding: 20px;
 }
+
+// Tabs Styling
 
 .tabs-menu {
   display: table;
@@ -227,3 +233,21 @@ ul.dashed > li.indent {
 .tab-panel {
   padding: 10px 50px;
 }
+
+// Loading Styling
+
+#loader-wrapper .loader-section {
+	position: fixed;
+	top: 0px;
+  left: 0px;
+	width: 100%;
+	height: 100%;
+	background: #222;
+	z-index: 1000;
+}
+
+
+
+
+
+// End

@@ -9,6 +9,7 @@ import MainBody from "../components/main-body"
 import Footing from "../components/footing"
 import Section from "../components/section"
 import Interact from "../components/interact"
+import Loading from "../components/loading"
 
 // JSON Data
 import workData from './content/work.json';
@@ -89,6 +90,7 @@ class Resume extends Component {
   render() {
     return (
       <Document>
+        <Loading />
         <Heading>
           <LeftColumn>
             <h1 className='mainName'>
