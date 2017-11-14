@@ -67,13 +67,33 @@
           "link": "http://www.centerforpaincontrol.net/",
           "text": "Because universities in Germany have different semester timelines than here in America, I had a few months before flying to study abroad at TU Dresden. At the time, my dad needed some help setting up a few new computers and then connecting them to the server at his office. Therefore, I volunteered to help him out. I would leave with him in the mornings and spend the days working in his coworker’s office (she was out on vacation).\n\nThe work itself was simple enough, but it really helped me get a grasp of running IT at a small doctor’s practice. I was setting up about 10 computers, installing the specific software for their specific user’s needs, while also connecting them to the server/database that they had running out of the basement.\n\nWhile waiting for software to install (I’d be setting up 3-4 machines at any given time) I’d usually be asked for some IT help by the different employees in the office, so there was not too much downtime waiting for these installations to happen.\n\nAfter the machines were completed, I would set them up in their specific offices after the employees left, and then head to the back room to ensure that the Ethernet connecters were live to the specific ports. Overall, I worked here about 2-3 times a week for 3 weeks before everything was completed and operational.",
           "categories": [
-            "desktop"
+            "pictures"
           ],
           "pictures": [
             {
-              "title": "Home",
-              "category": "desktop",
-              "src": "./images/projects/bchs/home.png"
+              "title": "",
+              "category": "pictures",
+              "src": "./images/other/cfpc/office.png"
+            },
+            {
+              "title": "",
+              "category": "pictures",
+              "src": "./images/other/cfpc/PostOp.png"
+            },
+            {
+              "title": "",
+              "category": "pictures",
+              "src": "./images/other/cfpc/room.png"
+            },
+            {
+              "title": "",
+              "category": "pictures",
+              "src": "./images/other/cfpc/postop2.png"
+            },
+            {
+              "title": "",
+              "category": "pictures",
+              "src": "./images/other/cfpc/operate.png"
             }
           ]
         }
