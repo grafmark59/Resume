@@ -10,6 +10,7 @@ import Footing from "../components/footing"
 import Section from "../components/section"
 import Interact from "../components/interact"
 import Loading from "../components/loading"
+import Header from "../components/header"
 
 // JSON Data
 import workData from './content/work.json';
@@ -94,6 +95,7 @@ class Resume extends Component {
   render() {
     return (
       <Document>
+        <Header />
         <Loading />
         <Heading>
           <LeftColumn>
@@ -278,6 +280,11 @@ class Resume extends Component {
            isOpen={this.state.showModal}
            contentLabel="Minimal Modal Example"
            onRequestClose={this.handleCloseModal}
+           style={
+             {
+               zIndex:3
+             }
+           }
         >
           <MuiThemeProvider>
             <div>

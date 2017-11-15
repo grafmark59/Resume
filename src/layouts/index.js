@@ -6,35 +6,6 @@ import Helmet from 'react-helmet'
 import '../styles/index.scss'
 
 
-const Header = () => (
-  <div
-    style={{
-      background: 'rgb(82, 86, 89)',
-      // marginBottom: '.05rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          Daniel Graf Resume 2017
-        </Link>
-      </h1>
-    </div>
-  </div>
-)
-
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
@@ -46,7 +17,7 @@ const TemplateWrapper = ({ children }) => (
     >
       <script type="text/javascript" src="http://fast.fonts.net/jsapi/0a390850-37c6-420c-8ead-c15e81202559.js"></script>
     </Helmet>
-    {/* <Header/> */}
+
     <div
       style={{
         margin: '0 auto',
