@@ -105,11 +105,12 @@ class Resume extends Component {
             </h3>
           </LeftColumn>
           <RightColumn>
-            <h3 className='right'>
+            <h3 className='right topSpace'>
               <span>
-                <br/>
                 <a className='link' href="mailto:danielgraf.developer@gmail.com">danielgraf.developer@gmail.com</a>
                 <br/>
+                <a className='link' href="http://www.danielwgraf.com">www.danielwgraf.com</a>
+                <br />
                 (610) 763-1629
               </span>
             </h3>
@@ -120,7 +121,7 @@ class Resume extends Component {
           <LeftColumn>
             <h2>Education</h2>
             <Section>
-              <h4><span><a className='link' href="https://www.cmu.edu">Carnegie Mellon University</a></span></h4>
+              <h4><span><a className='link' href="https://www.cmu.edu" target='_blank'>Carnegie Mellon University</a></span></h4>
               <p>
                 August 2013 - May 2017 <br/>
                 B.S. Information Systems <br/>
@@ -130,14 +131,14 @@ class Resume extends Component {
               </p>
             </Section>
             <Section>
-              <h4><span><a className='link' href="https://tu-dresden.de/">TU Dresden</a></span></h4>
+              <h4><span><a className='link' href="https://tu-dresden.de/" target='_blank'>TU Dresden</a></span></h4>
               <p>
                 Spring 2016 <br/>
                 Study Abroad <br/>
               </p>
             </Section>
             <Section>
-              <h4><span><a className='link' href="https://www.readingsd.org/rhs">Reading High School</a></span></h4>
+              <h4><span><a className='link' href="https://www.readingsd.org/rhs" target='_blank'>Reading High School</a></span></h4>
               <p>
                 August 2009 - May 2013 <br/>
                 4.0 GPA <br/>
