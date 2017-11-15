@@ -87,6 +87,10 @@ class Resume extends Component {
     document.body.classList.toggle('fade', true);
   }
 
+  componentDidMount() {
+    document.body.classList.toggle('loaded', true);
+  }
+
   render() {
     return (
       <Document>
