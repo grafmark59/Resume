@@ -39,7 +39,7 @@ export default ({ children }) =>
         </p>
       </LeftColumn>
       <RightColumn>
-        <IconButton href="/DanielGraf-Resume.pdf" download='DanielGraf-Resume.pdf' style={{
+        <IconButton href="DanielGraf-Resume.pdf" download='DanielGraf-Resume.pdf' style={{
           paddingTop: '12px',
           paddingRight: '100px',
           margin: 'auto',
