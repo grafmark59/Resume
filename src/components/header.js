@@ -4,11 +4,14 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import LeftColumn from "../components/left-column"
 import RightColumn from "../components/right-column"
 import Paper from 'material-ui/Paper';
+import IconButton from 'material-ui/IconButton';
+import Download from 'material-ui/svg-icons/file/file-download';
 
 export default ({ children }) =>
 (
   <MuiThemeProvider>
     <Paper
+      zDepth={2}
       className='myHeader'
       style={{
         width:'100%',
@@ -24,17 +27,27 @@ export default ({ children }) =>
         // marginBottom: '.05rem',
       }}
     >
-      <LeftColumn style={{
-        padding: '10px',
-      }}>
+      <LeftColumn>
         <p style={{
+          paddingTop: '18px',
+          paddingLeft: '30px',
           margin: 'auto',
           fontWeight: 'bold',
           color: 'rgb(241, 241, 241)'
          }}>
-          Daniel Graf Resume 2017
+          DanielGraf-Resume
         </p>
       </LeftColumn>
+      <RightColumn>
+        <IconButton href="/DanielGraf-Resume.pdf" download='DanielGraf-Resume.pdf' style={{
+          paddingTop: '12px',
+          paddingRight: '100px',
+          margin: 'auto',
+          float: 'right'
+         }} >
+          <Download className='right' color='rgb(241, 241, 241)' />
+        </IconButton>
+      </RightColumn>
     </Paper>
   </MuiThemeProvider>
 )

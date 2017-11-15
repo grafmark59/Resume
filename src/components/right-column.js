@@ -5,7 +5,7 @@ export default ({ children }) =>
     style={
       {
         flex: '1',
-        backgroundColor: 'rgb(255, 255, 255)'
+        // backgroundColor: 'rgb(255, 255, 255)'
       }
     }>
     {children}
