@@ -5,7 +5,6 @@ import Helmet from 'react-helmet'
 
 import '../styles/index.scss'
 
-
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
@@ -15,7 +14,8 @@ const TemplateWrapper = ({ children }) => (
         { name: 'keywords', content: 'Daniel, Graf, Resume, 2017' },
       ]}
     >
-      <script type="text/javascript" src="https://fast.fonts.net/jsapi/0a390850-37c6-420c-8ead-c15e81202559.js"></script>
+      <script type="text/javascript" src="//fast.fonts.net/jsapi/0a390850-37c6-420c-8ead-c15e81202559.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Kreon" rel="stylesheet"></link>
     </Helmet>
 
     <div
