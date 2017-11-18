@@ -366,3 +366,13 @@ ul.dashed > li.indent {
     width:960px;
     margin:0px auto;
 }
+
+// Unselectable text
+h1, h2, h3, h4, h5, h6, p {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
