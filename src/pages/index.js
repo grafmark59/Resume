@@ -35,6 +35,7 @@ class Resume extends Component {
     super(props);
 
     this.state = {
+      width: window.innerWidth,
       showModal: false,
       modalTitle: '',
       modalContent: '',
@@ -65,7 +66,7 @@ class Resume extends Component {
 
   handleOpenModal (title, content) {
     this.setState({ modalTitle: title });
-    this.setState({ modalContent: content })
+    this.setState({ modalContent: content });
     this.fadeOut();
     this.fadeIn(true);
   }
@@ -88,9 +89,29 @@ class Resume extends Component {
     document.body.classList.toggle('fade', true);
   }
 
+  componentWillMount() {
+    window.addEventListener('resize', this.handleWindowSizeChange);
+  }
+
   componentDidMount() {
+    if (this.state.width <= 600) {
+      var mobileTitle=workData.work[0].fullContent.fullTitle;
+      var mobileContent=workData.work[0].fullContent.content;
+
+      this.setState({ modalTitle: mobileTitle });
+      this.setState({ modalContent: mobileContent });
+      this.setState({ showModal: !this.state.showModal });
+    }
     document.body.classList.toggle('loaded', true);
   }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleWindowSizeChange);
+  }
+
+  handleWindowSizeChange = () => {
+    this.setState({ width: window.innerWidth });
+  };
 
   render() {
     return (
