@@ -35,7 +35,7 @@ class Resume extends Component {
     super(props);
 
     this.state = {
-      width: window.innerWidth,
+      // width: window.innerWidth,
       showModal: false,
       modalTitle: '',
       modalContent: '',
@@ -89,12 +89,8 @@ class Resume extends Component {
     document.body.classList.toggle('fade', true);
   }
 
-  componentWillMount() {
-    window.addEventListener('resize', this.handleWindowSizeChange);
-  }
-
   componentDidMount() {
-    if (this.state.width <= 600) {
+    if (window.innerWidth <= 600) {
       var mobileTitle=workData.work[0].fullContent.fullTitle;
       var mobileContent=workData.work[0].fullContent.content;
 
@@ -105,13 +101,17 @@ class Resume extends Component {
     document.body.classList.toggle('loaded', true);
   }
 
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.handleWindowSizeChange);
-  }
+  // componentWillMount() {
+  //   window.addEventListener('resize', this.handleWindowSizeChange);
+  // }
 
-  handleWindowSizeChange = () => {
-    this.setState({ width: window.innerWidth });
-  };
+  // componentWillUnmount() {
+  //   window.removeEventListener('resize', this.handleWindowSizeChange);
+  // }
+
+  // handleWindowSizeChange = () => {
+  //   this.setState({ width: window.innerWidth });
+  // };
 
   render() {
     return (
