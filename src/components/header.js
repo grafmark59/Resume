@@ -35,7 +35,7 @@ export default ({ children }) =>
           fontWeight: 'bold',
           color: 'rgb(241, 241, 241)'
          }}>
-          DanielGraf-Resume
+          DanielGraf-Interactive-Resume
         </p>
       </LeftColumn>
       <RightColumn>

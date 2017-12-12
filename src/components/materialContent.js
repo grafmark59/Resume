@@ -91,7 +91,7 @@ class MyAwesomeReactComponent extends Component {
           className="modalNavBar"
           // iconClassNameRight="muidocs-icon-navigation-expand-more"
           onLeftIconButtonTouchTap={this.handleDrawerToggle}
-          iconElementRight={<IconButton onClick={this.handleCloseModal}><NavigationClose /></IconButton>}
+          iconElementRight={<IconButton className='closeIconButton' onClick={this.handleCloseModal}><NavigationClose /></IconButton>}
         >
 
         </AppBar>
@@ -119,7 +119,7 @@ class MyAwesomeReactComponent extends Component {
               </h3>
             </div>
             <div style={styles.root}>
-              <div style={styles.gridList}>
+              <div className='modalProjectText' style={styles.gridList}>
                 <span style={{whiteSpace: "pre-wrap"}}>
                   { this.props.projectContent.text }
                 </span>
@@ -127,8 +127,8 @@ class MyAwesomeReactComponent extends Component {
             </div>
           </div>
 
-          {/* Pictures */}
-          <div className='flexChild'>
+          {/* Pictures -- Need to change for mobile */}
+          <div className='flexChild modalProjectPhotos'>
             <Tabs>
               {
                 this.props.projectContent.categories.map((category) =>
@@ -175,6 +175,7 @@ class MyAwesomeReactComponent extends Component {
           <Paper zDepth={1}>
             <BottomNavigation selectedIndex={this.state.selectedIndex}>
               <BottomNavigationItem
+                className='closeIconButton'
                 icon={closeIcon}
                 onClick={() => this.handleCloseModal()}
               />
