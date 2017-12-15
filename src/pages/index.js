@@ -151,10 +151,10 @@ class Resume extends Component {
             <Section>
               <h4><span><a className='link' href="https://www.cmu.edu" target='_blank'>Carnegie Mellon University</a></span></h4>
               <p>
-                August 2013 - May 2017 <br/>
                 B.S. Information Systems <br/>
                 w/ University Honors <br/>
                 Minor in German <br/>
+                May 2017 <br/>
                 3.6 GPA
               </p>
             </Section>

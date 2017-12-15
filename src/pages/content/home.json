@@ -9,10 +9,10 @@
       "fullContent":{
         "fullTitle": "Daniel Graf Resume",
         "content": {
-          "course": "",
+          "course": "My Personal Website",
           "location": "",
           "link": "",
-          "text": "Test Home Content",
+          "text": "Hello! My name is Daniel Graf and this is the mobile version of my personal website! I am a Software Engineer, Full Stack Developer, aspiring Product Manager, Musician, and Film Enthusiast. Having graduated from Carnegie Mellon's Information Systems program, I understand the synergy that exists between people, processes, and technology.\n\nThis website is best enjoyed on a desktop because it was made using React with the intention of mimicking my PDF resume layout. However, if you would like to see a summary of my projects and experience, you can do that here!\n\nEducation:\nCarnegie Mellon University\nB.S. Information Systems\nw/ University Honors\nMinor in German\nMay 2017\n3.6 GPA\n\nSkills:\nLeadership | Microsoft Office \nProject Management | UI/UX \nMobile Dev | Public Speaking \nFrontend & Backend Dev \n\nProgramming:\nRuby on Rails | Ruby | SQL \nGit | HTML | CSS | JavaScript \nSwift | C | Python | NodeJS \nJava | ReactJS | AngularJS \n\nLanguages:\nEnglish | German",
           "categories": [],
           "pictures": []
         }
