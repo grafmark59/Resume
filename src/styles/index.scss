@@ -453,16 +453,22 @@ h1, h2, h3, h4, h5, h6, p {
 .mobileLanding {
   position: absolute;
   overflow: hidden;
-  top: 0;
+  top: -10vh;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 110vh;
   background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
+  .mainName {
+    font-size: 3em;
+  }
+  h3 {
+    font-size: 1em;
+  }
 }
 
 .myButton {
