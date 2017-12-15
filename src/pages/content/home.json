@@ -1,0 +1,22 @@
+{
+  "home": [
+    {
+      "key": "h0",
+      "title": "Resume",
+      "location": "",
+      "date": "",
+      "responsibilities": [],
+      "fullContent":{
+        "fullTitle": "Daniel Graf Resume",
+        "content": {
+          "course": "",
+          "location": "",
+          "link": "",
+          "text": "Test Home Content",
+          "categories": [],
+          "pictures": []
+        }
+      }
+    }
+  ]
+}

@@ -19,6 +19,7 @@ const TemplateWrapper = ({ children }) => (
     </Helmet>
 
     <div
+      className='documentStyle'
       style={{
         margin: '0 auto',
         width: 'auto',

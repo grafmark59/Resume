@@ -11,6 +11,7 @@
     "gatsby-plugin-typography": "^1.7.10",
     "material-ui": "^0.19.4",
     "react-modal": "^3.1.0",
+    "react-responsive": "^4.0.3",
     "react-simpletabs": "^0.7.0",
     "typography-theme-doelger": "^0.15.11"
   },

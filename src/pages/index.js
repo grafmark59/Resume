@@ -16,6 +16,7 @@ import Header from "../components/header"
 import workData from './content/work.json';
 import projectData from './content/projects.json';
 import otherData from './content/other.json';
+import homeData from './content/home.json';
 
 // Modal
 import ReactModal from 'react-modal';
@@ -29,13 +30,15 @@ import ArrowDropDown from 'material-ui/svg-icons/navigation/expand-more';
 import Divider from 'material-ui/Divider';
 import AppBar from 'material-ui/AppBar';
 
+import MediaQuery from 'react-responsive';
+
 class Resume extends Component {
 
   constructor(props) {
     super(props);
 
     this.state = {
-      // width: window.innerWidth,
+      width: 0,
       showModal: false,
       modalTitle: '',
       modalContent: '',
@@ -90,15 +93,17 @@ class Resume extends Component {
   }
 
   componentDidMount() {
-    if (window.innerWidth <= 600) {
-      var mobileTitle=workData.work[0].fullContent.fullTitle;
-      var mobileContent=workData.work[0].fullContent.content;
-
-      this.setState({ modalTitle: mobileTitle });
-      this.setState({ modalContent: mobileContent });
-      this.setState({ showModal: !this.state.showModal });
-    }
+    // this.state.width = window.innerWidth;
+    // if (window.innerWidth <= 600) {
+    //   var mobileTitle=homeData.home[0].fullContent.fullTitle;
+    //   var mobileContent=homeData.home[0].fullContent.content;
+    //
+    //   this.setState({ modalTitle: mobileTitle });
+    //   this.setState({ modalContent: mobileContent });
+    //   this.setState({ showModal: !this.state.showModal });
+    // }
     document.body.classList.toggle('loaded', true);
+
   }
 
   // componentWillMount() {
@@ -116,8 +121,8 @@ class Resume extends Component {
   render() {
     return (
       <Document>
-        <Header />
         <Loading />
+        <Header />
         <Heading>
           <LeftColumn>
             <h1 className='mainName'>
@@ -295,6 +300,23 @@ class Resume extends Component {
             References Available Upon Request
           </h2>
         </Footing>
+        <MediaQuery query="(max-width: 800px)">
+          <div className='mobileLanding'>
+            <h1 className='mainName'>
+              <span>Daniel</span> <span>Graf</span>
+            </h1>
+            <h3>
+              Developer | Innovator
+            </h3>
+            <div className="resumeButton center">
+              <a href='#' onClick={() => this.handleOpenModal(homeData.home[0].fullContent.fullTitle, homeData.home[0].fullContent.content)} className='myButton myBlue background'>
+                {/* <p className='myWhite text'> */}
+                  Open my resume!
+                {/* </p> */}
+              </a>
+            </div>
+          </div>
+        </MediaQuery>
         {/* Main Modal */}
         <ReactModal
            // ref={(input) => { this.textInput = input; }}
@@ -321,11 +343,41 @@ class Resume extends Component {
                 open={this.state.openDrawer}
                 onRequestChange={(openDrawer) => this.setState({openDrawer})}
               >
-                <AppBar
-                  title='Resume'
-                  className="modalNavBar"
-                  showMenuIconButton={false}
-                />
+                <MediaQuery query="(min-width: 801px)">
+                  <AppBar
+                    title='Resume'
+                    className="modalNavBar"
+                    showMenuIconButton={false}
+                  />
+                </MediaQuery>
+                <MediaQuery query="(max-width: 800px)">
+                  <div>
+                    <AppBar
+                      title='Daniel Graf Resume'
+                      className="modalNavBar"
+                      showMenuIconButton={false}
+                    />
+                    <MenuItem
+                      key={'h0'}
+                      onClick={() => this.switchModalFromMenu(homeData.home[0].fullContent.fullTitle, homeData.home[0].fullContent.content)}
+                      innerDivStyle= {
+                        {
+                          color: '#008AFF',
+                          backgroundColor: '#white'
+                        }
+                      }
+                    >
+                      Home
+                    </MenuItem>
+                    <Divider
+                      style={
+                        {
+                          marginTop: '0px'
+                        }
+                      }
+                    />
+                  </div>
+                </MediaQuery>
                 <MenuItem
                   key='workList'
                   rightIcon={<ArrowDropDown />}

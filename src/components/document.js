@@ -10,6 +10,7 @@ class Document extends Component {
   render() {
     return (
       <div
+        className='documentStyle'
         style={
           {
             display: 'flex',
