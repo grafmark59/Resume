@@ -2,9 +2,10 @@
   "other": [
     {
       "key": "o0",
+      "primary": false,
       "title": "Study Abroad",
       "location": "TU Dresden",
-      "date": "Spring ‘16",
+      "date": "Spring 16",
       "responsibilities": [
         {
           "key": "o0_0",
@@ -49,13 +50,14 @@
     },
     {
       "key": "o1",
+      "primary": true,
       "title": "Technical Assistant",
       "location": "Center for Pain Control",
-      "date": "Jan – Feb ‘16",
+      "date": "Jan – Feb 16",
       "responsibilities": [
         {
           "key": "o1_0",
-          "content": "- Served as tech support, set up & connected new computers to a server",
+          "content": "- Deployed new computers to the network after a ransomware attack",
           "className": ""
         }
       ],
@@ -101,6 +103,7 @@
     },
     {
       "key": "o2",
+      "primary": true,
       "title": "Mission Trips",
       "location": "Guatemala",
       "date": "Summers 2007-2009",

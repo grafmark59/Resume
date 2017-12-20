@@ -155,49 +155,51 @@ class Resume extends Component {
                 w/ University Honors <br/>
                 Minor in German <br/>
                 May 2017 <br/>
-                3.6 GPA
+                3.6/4.0 GPA
               </p>
             </Section>
             <Section>
-              <h4><span><a className='link' href="https://tu-dresden.de/" target='_blank'>TU Dresden</a></span></h4>
+              <h4><span>Study Abroad</span></h4>
               <p>
-                Spring 2016 <br/>
-                Study Abroad <br/>
-              </p>
-            </Section>
-            <Section>
-              <h4><span><a className='link' href="https://www.readingsd.org/rhs" target='_blank'>Reading High School</a></span></h4>
-              <p>
-                August 2009 - May 2013 <br/>
-                4.0 GPA <br/>
+                <a className='link' href="https://tu-dresden.de/" target='_blank'>Technische Universität Dresden</a><br/>
+                Wirtschaftsinformatik<br/>
+                Spring 2016
               </p>
             </Section>
 
-            <h2>Skills</h2>
+            <h2>Technical</h2>
             <Section>
-              <h5>
-                Leadership | Microsoft Office <br/>
-                Project Management | UI/UX <br/>
-                Mobile Dev | Public Speaking <br/>
-                Frontend & Backend Dev <br/>
-              </h5>
+              <p>
+                UI/UX | Mobile Development <br/>
+                Code Design | Frontend Design <br/>
+                Backend Development
+              </p>
             </Section>
 
             <h2>Programming</h2>
             <Section>
-              <h5>
+              <p>
                 Ruby on Rails | Ruby | SQL <br/>
                 Git | HTML | CSS | JavaScript <br/>
                 Swift | C | Python | NodeJS <br/>
-                Java | ReactJS | AngularJS <br/>
-              </h5>
+                Java | ReactJS | AngularJS
+              </p>
+            </Section>
+
+            <h2>Business</h2>
+            <Section>
+              <p>
+                Leadership | Microsoft Office <br/>
+                Project & Product Management <br/>
+                Teamwork | Public Speaking
+              </p>
             </Section>
 
             <h2>Languages</h2>
             <Section>
-              <h5>
+              <p>
                 English | German
-              </h5>
+              </p>
             </Section>
 
           </LeftColumn>
@@ -208,28 +210,33 @@ class Resume extends Component {
                 // Loops through the work experiences and creates interactive
                 // Sections to click on and open a modal
                 workData.work.map((job) =>
-                  <Interact
-                    key={job.key}
-                    title={job.fullContent.fullTitle}
-                    content={job.fullContent.content}
-                    innerOpenModal={this.handleOpenModal}
-                    >
-                    <h4>
-                      <span>{job.position} </span>
-                       • {job.location} • {job.date}</h4>
-                    <ul className='dashed'>
-                      {
-                        job.responsibilities.map((responsibility) =>
-                          <li
-                            key={responsibility.key}
-                            className={responsibility.className}
-                            >
-                            {responsibility.content}
-                          </li>
-                        )
-                      }
-                    </ul>
-                  </Interact>
+                {
+                  if (job.primary)
+                    return (
+                      <Interact
+                        key={job.key}
+                        title={job.fullContent.fullTitle}
+                        content={job.fullContent.content}
+                        innerOpenModal={this.handleOpenModal}
+                        >
+                        <h4>
+                          <span>{job.position} </span>
+                           • {job.location} • {job.date}</h4>
+                        <ul className='dashed'>
+                          {
+                            job.responsibilities.map((responsibility) =>
+                              <li
+                                key={responsibility.key}
+                                className={responsibility.className}
+                                >
+                                {responsibility.content}
+                              </li>
+                            )
+                          }
+                        </ul>
+                      </Interact>
+                    )
+                  }
                 )
                }
             </Section>
@@ -240,26 +247,31 @@ class Resume extends Component {
                 // Loops through the project experiences and creates interactive
                 // Sections to click on and open a modal
                 projectData.projects.map((project) =>
-                  <Interact
-                    key={project.key}
-                    title={project.fullContent.fullTitle}
-                    content={project.fullContent.content}
-                    innerOpenModal={this.handleOpenModal}
-                    >
-                    <h4><span>{project.title}</span> • {project.date}</h4>
-                    <ul className='dashed'>
-                      {
-                        project.responsibilities.map((responsibility) =>
-                          <li
-                            key={responsibility.key}
-                            className={responsibility.className}
-                            >
-                            {responsibility.content}
-                          </li>
-                        )
-                      }
-                    </ul>
-                  </Interact>
+                {
+                  if (project.primary)
+                    return (
+                      <Interact
+                        key={project.key}
+                        title={project.fullContent.fullTitle}
+                        content={project.fullContent.content}
+                        innerOpenModal={this.handleOpenModal}
+                        >
+                        <h4><span>{project.title}</span> • {project.date}</h4>
+                        <ul className='dashed'>
+                          {
+                            project.responsibilities.map((responsibility) =>
+                              <li
+                                key={responsibility.key}
+                                className={responsibility.className}
+                                >
+                                {responsibility.content}
+                              </li>
+                            )
+                          }
+                        </ul>
+                      </Interact>
+                    )
+                  }
                 )
                }
             </Section>
@@ -270,26 +282,31 @@ class Resume extends Component {
                 // Loops through the other experiences and creates interactive
                 // Sections to click on and open a modal
                 otherData.other.map((obj) =>
-                  <Interact
-                    key={obj.key}
-                    title={obj.fullContent.fullTitle}
-                    content={obj.fullContent.content}
-                    innerOpenModal={this.handleOpenModal}
-                    >
-                    <h4><span>{obj.title} </span>
-                    • {obj.location} • {obj.date}</h4>
-                    <ul className='dashed'>
-                      {
-                        obj.responsibilities.map((responsibility) =>
-                          <li
-                            key={responsibility.key}
-                            className={responsibility.className}>
-                            {responsibility.content}
-                          </li>
-                        )
-                      }
-                    </ul>
-                  </Interact>
+                {
+                  if (obj.primary)
+                    return (
+                      <Interact
+                        key={obj.key}
+                        title={obj.fullContent.fullTitle}
+                        content={obj.fullContent.content}
+                        innerOpenModal={this.handleOpenModal}
+                        >
+                        <h4><span>{obj.title} </span>
+                        • {obj.location} • {obj.date}</h4>
+                        <ul className='dashed'>
+                          {
+                            obj.responsibilities.map((responsibility) =>
+                              <li
+                                key={responsibility.key}
+                                className={responsibility.className}>
+                                {responsibility.content}
+                              </li>
+                            )
+                          }
+                        </ul>
+                      </Interact>
+                    )
+                  }
                 )
                }
             </Section>

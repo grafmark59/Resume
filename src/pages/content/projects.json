@@ -2,22 +2,33 @@
   "projects": [
     {
       "key": "p0",
+      "primary": true,
       "title": "Beaver County Humane Society Foster Portal",
-      "date": "Spring ‘17",
+      "date": "Spring 17",
       "responsibilities": [
         {
           "key": "p0_0",
-          "content": "- Continued a Ruby on Rails project that was started in 2016",
+          "content": "- Worked with a small team to fix bugs and improve functionality of the",
           "className": ""
         },
         {
           "key": "p0_1",
-          "content": "- Fixed bugs, reorganized basic functionality, and implemented",
-          "className": ""
+          "content": "BCHS Foster Portal, which doubled the amount of users over six",
+          "className": "indent"
         },
         {
           "key": "p0_2",
-          "content": "a complete design overhaul.",
+          "content": " months, therefore increasing the amount of adoptions.",
+          "className": "indent"
+        },
+        {
+          "key": "p0_3",
+          "content": "- Architected and coded a design overhaul to improve the user",
+          "className": ""
+        },
+        {
+          "key": "p0_4",
+          "content": "experience, while also expanding application use to mobile devices.",
           "className": "indent"
         }
       ],
@@ -78,17 +89,18 @@
     },
     {
       "key": "p1",
+      "primary": true,
       "title": "CMU Soundbytes Website",
-      "date": "Spring ‘17",
+      "date": "Spring 17",
       "responsibilities": [
         {
           "key": "p1_0",
-          "content": "- Built a website for the CMU Soundbytes a cappella group using the",
+          "content": "- Revitalized a website that hadn’t been updated since 2005 using Jekyll",
           "className": ""
         },
         {
           "key": "p1_1",
-          "content": "Jekyll Ruby gem and launched it through GitHub Pages",
+          "content": "and GitHub Pages, leading to a more public presence for the group",
           "className": "indent"
         }
       ],
@@ -123,18 +135,34 @@
     },
     {
       "key": "p2",
+      "primary": true,
       "title": "CMU Safety Pin",
-      "date": "Fall ‘16",
+      "date": "Fall 16",
       "responsibilities": [
         {
           "key": "p2_0",
-          "content": "- An iOS application with a web-application backend",
+          "content": "- Participated in a team tasked with the goal of creating an innovation in",
           "className": ""
         },
         {
           "key": "p2_1",
-          "content": "- Developed the iOS frontend and interactions throughout the app",
+          "content": "Health and Safety on the CMU Campus",
+          "className": "indent"
+        },
+        {
+          "key": "p2_2",
+          "content": "- Researched, designed, and developed an iOS application with an",
           "className": ""
+        },
+        {
+          "key": "p2_3",
+          "content": "interactive map-based UI to consolidate safety information and show",
+          "className": "indent"
+        },
+        {
+          "key": "p2_4",
+          "content": "important locations on campus, such as emergency phones or shuttles",
+          "className": "indent"
         }
       ],
       "fullContent":{

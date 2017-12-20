@@ -2,28 +2,29 @@
   "work": [
     {
       "key": "w0",
+      "primary": true,
       "position": "Tech. Consultant",
-      "location": "Palauan Ministry of Education",
-      "date": "Summer ‘17",
+      "location": "Ministry of Education, Koror, Palau",
+      "date": "Summer 17",
       "responsibilities": [
         {
           "key": "w0_0",
-          "content": "- Evaluated the paper-based Teacher Evaluation System",
+          "content": "- Developed the first Teacher Evaluation System for Palau, a full-stack",
           "className": ""
         },
         {
           "key": "w0_1",
-          "content": "- Developed a full-stack Ruby on Rails solution with a MySQL database",
-          "className": ""
+          "content": "Ruby on Rails solution that allows access to over 200 employees",
+          "className": "indent"
         },
         {
           "key": "w0_2",
-          "content": "- Implemented a system with log-in functionality for all staff to be able to",
+          "content": "- Consolidated over 6 years of existing observation data resulting in the",
           "className": ""
         },
         {
           "key": "w0_3",
-          "content": "go online and see their respective evaluations",
+          "content": "ability to analyze and improve teaching throughout the country",
           "className": "indent"
         }
       ],
@@ -85,24 +86,25 @@
     },
     {
       "key": "w1",
+      "primary": true,
       "position": "Teaching Assistant",
       "location": "App Design and Development",
-      "date": "Spring ‘17",
+      "date": "Spring 17",
       "responsibilities": [
         {
           "key": "w1_0",
-          "content": "- Worked as a TA for 67-272, the first major Information Systems",
+          "content": "- Worked as a TA for the sophomore Information Systems course",
           "className": ""
         },
         {
           "key": "w1_1",
-          "content": "course in terms of web application development (Ruby on Rails)",
-          "className": "indent"
+          "content": "- Graded exams and projects, while also running weekly labs to help up",
+          "className": ""
         },
         {
           "key": "w1_2",
-          "content": "- Graded tests and projects while also running weekly labs",
-          "className": ""
+          "content": "to 20 sophomores improve their web application development skills",
+          "className": "indent"
         }
       ],
       "fullContent":{
@@ -127,19 +129,25 @@
     },
     {
       "key": "w2",
+      "primary": true,
       "position": "Camp Counselor",
       "location": "Bear Creek Camp",
-      "date": "Summers ‘14-‘16",
+      "date": "Summers 14-16",
       "responsibilities": [
         {
           "key": "w2_0",
-          "content": "- Worked as a camp counselor for 10 weeks throughout the summer",
+          "content": "- Managed groups of 10-20 children weekly at a stay-away camp",
           "className": ""
         },
         {
           "key": "w2_1",
-          "content": "- Supervised new groups of 10-20 kids, ages 8-18, every week",
+          "content": "- Cultivated campers’ growth and teamwork skills through group building",
           "className": ""
+        },
+        {
+          "key": "w2_2",
+          "content": "activities, while teaching them about nature through hikes and games",
+          "className": "indent"
         }
       ],
       "fullContent":{
