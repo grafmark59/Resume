@@ -13,21 +13,16 @@
         },
         {
           "key": "p0_1",
-          "content": "BCHS Foster Portal, which doubled the amount of users over six",
+          "content": "BCHS Foster Portal, which doubled the amount of users over six months",
           "className": "indent"
         },
         {
           "key": "p0_2",
-          "content": " months, therefore increasing the amount of adoptions.",
-          "className": "indent"
-        },
-        {
-          "key": "p0_3",
           "content": "- Architected and coded a design overhaul to improve the user",
           "className": ""
         },
         {
-          "key": "p0_4",
+          "key": "p0_3",
           "content": "experience, while also expanding application use to mobile devices.",
           "className": "indent"
         }
@@ -156,12 +151,17 @@
         },
         {
           "key": "p2_3",
-          "content": "interactive map-based UI to consolidate safety information and show",
+          "content": "interactive map-based UI to consolidate safety information",
           "className": "indent"
         },
         {
           "key": "p2_4",
-          "content": "important locations on campus, such as emergency phones or shuttles",
+          "content": "- The application shows vital locations on campus, such as emergency",
+          "className": ""
+        },
+        {
+          "key": "p2_5",
+          "content": "phones, while also following active shuttles and detailing crime alerts",
           "className": "indent"
         }
       ],
