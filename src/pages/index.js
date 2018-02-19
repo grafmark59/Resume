@@ -56,6 +56,10 @@ class Resume extends Component {
   switchModalContent (title, content) {
     this.setState({ modalTitle: title });
     this.setState({ modalContent: content });
+    var modalBody = document.getElementById('modalBodyText');
+    var modalPhotos = document.getElementById('modalBodyPhotos');
+    modalBody.scrollTop = 0;
+    modalPhotos.scrollTop = 0;
   }
 
   switchModalFromMenu (title, content) {

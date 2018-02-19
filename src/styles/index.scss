@@ -441,7 +441,7 @@ ul.dashed > li.indent {
 }
 
 // Unselectable text
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, span, li, ul {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;

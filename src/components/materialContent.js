@@ -68,7 +68,9 @@ class MyAwesomeReactComponent extends Component {
     this.props.closeModal();
   }
 
-
+  // componentDidMount () {
+  //   window.scrollTo(0, 0);
+  // }
 
   render() {
     var link;
@@ -119,7 +121,7 @@ class MyAwesomeReactComponent extends Component {
               </h3>
             </div>
             <div style={styles.root}>
-              <div className='modalProjectText' style={styles.gridList}>
+              <div id='modalBodyText' className='modalProjectText' style={styles.gridList}>
                 <span style={{whiteSpace: "pre-wrap"}}>
                   { this.props.projectContent.text }
                 </span>
@@ -138,6 +140,7 @@ class MyAwesomeReactComponent extends Component {
                   >
                   <div style={styles.root}>
                     <GridList
+                      id='modalBodyPhotos'
                       cols={2}
                       cellHeight={category==='mobile' ? 200 : (category==='tablet' ? 300 : 225)}
                       padding={1}
