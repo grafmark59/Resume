@@ -1,7 +1,7 @@
 module.exports = {
   pathPrefix: `/Resume`,
   siteMetadata: {
-    title: `Daniel Graf Resume 2017`,
+    title: `Daniel Graf Resume 2020`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

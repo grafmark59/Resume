@@ -22,7 +22,8 @@ const TemplateWrapper = ({ children }) => (
       className='documentStyle'
       style={{
         margin: '0 auto',
-        width: 'auto',
+        width: '100vw',
+        // width: 'auto',
         // minWidth: '1630px',
         minHeight: '100vh',
         padding: '1.0875rem 12.9rem 1.45rem', // Padding around Document
@@ -30,6 +31,8 @@ const TemplateWrapper = ({ children }) => (
         // backgroundColor: '#FFF'
         backgroundColor: 'rgb(82, 86, 89)',
         position: 'absolute',
+        justifyContent: 'center',
+        alignItems: 'center',
         // whiteSpace: 'nowrap',
         overflowX: 'hidden'
       }}

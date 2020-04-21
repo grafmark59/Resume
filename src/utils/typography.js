@@ -2,7 +2,8 @@ import Typography from 'typography'
 import doelgerTheme from 'typography-theme-doelger'
 
 const typography = new Typography({
-  baseFontSize: '18px',
+  baseFontSize: '12px',
+  // baseFontSize: '18px',
   baseLineHeight: 1.666,
   headerFontFamily: ['Rockwell W01', "Kreon", "Courier Bold", 'Courier', 'Georgia', 'Times', "Times New Roman", 'serif'],
   headerWeight: 'normal',
