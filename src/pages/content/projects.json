@@ -84,7 +84,7 @@
     },
     {
       "key": "p1",
-      "primary": true,
+      "primary": false,
       "title": "CMU Soundbytes Website",
       "date": "Spring 17",
       "responsibilities": [
@@ -130,7 +130,7 @@
     },
     {
       "key": "p2",
-      "primary": true,
+      "primary": false,
       "title": "CMU Safety Pin",
       "date": "Fall 16",
       "responsibilities": [

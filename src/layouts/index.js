@@ -8,10 +8,10 @@ import '../styles/index.scss'
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Daniel Graf Resume 2017"
+      title="Daniel Graf Resume 2020"
       meta={[
         { name: 'description', content: 'Daniel Graf\'s Virtual Resume' },
-        { name: 'keywords', content: 'Daniel, Graf, Resume, 2017' },
+        { name: 'keywords', content: 'Daniel, Graf, Resume, 2020' },
       ]}
     >
       <script type="text/javascript" src="//fast.fonts.net/jsapi/0a390850-37c6-420c-8ead-c15e81202559.js"></script>

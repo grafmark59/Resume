@@ -1,6 +1,154 @@
 {
   "work": [
     {
+      "key": "w5",
+      "primary": true,
+      "position": "Application Engineer",
+      "location": "EnerSys, Reading, PA",
+      "date": "June 18 - Present",
+      "responsibilities": [
+        {
+          "key": "w5_0",
+          "content": "- Developing and maintaining web/mobile applications using various",
+          "className": ""
+        },
+        {
+          "key": "w5_1",
+          "content": "languages and technology stacks, both known and learned",
+          "className": "indent"
+        },
+        {
+          "key": "w5_3",
+          "content": "- Working with small teams to develop multiple prototypes and apps,",
+          "className": ""
+        },
+        {
+          "key": "w5_4",
+          "content": "allowing customers to better interact with EnerSys products",
+          "className": "indent"
+        }
+      ],
+      "fullContent":{
+        "fullTitle": "Application Engineer",
+        "content": {
+          "client": "EnerSys",
+          "location": "Reading, PA",
+          "link": "https://www.enersys.com/",
+          "text": "I work here I guess.",
+          "categories": [],
+          "pictures": []
+        }
+      }
+    },
+    {
+      "key": "w6",
+      "primary": true,
+      "position": "Front-End Lead",
+      "location": "Index Inc, Remote",
+      "date": "December 18 - Present",
+      "responsibilities": [
+        {
+          "key": "w6_0",
+          "content": "- Leading the React Native Development for an ecommerce start-up",
+          "className": ""
+        },
+        {
+          "key": "w6_1",
+          "content": "- Working with a team to identify the best approach to build a custom",
+          "className": ""
+        },
+        {
+          "key": "w6_2",
+          "content": "multi-vender marketplace connecting users and businesses",
+          "className": "indent"
+        },
+        {
+          "key": "w6_3",
+          "content": "- Addressing issues both front-end and back-end to present a full",
+          "className": ""
+        },
+        {
+          "key": "w6_4",
+          "content": "scale product to stakeholders and investers",
+          "className": "indent"
+        }
+      ],
+      "fullContent":{
+        "fullTitle": "Application Engineer",
+        "content": {
+          "client": "Index Inc",
+          "location": "Remote",
+          "link": "",
+          "text": "I work here (remotely) I guess.",
+          "categories": [],
+          "pictures": []
+        }
+      }
+    },
+    {
+      "key": "d0",
+      "primary": true,
+      "position": "Website Designer & Developer",
+      "location": "Reading, PA",
+      "date": "August 17 - Present",
+      "responsibilities": [
+        {
+          "key": "d0_0",
+          "content": "- Working as a freelance website consultant for multiple clients",
+          "className": ""
+        },
+        {
+          "key": "d0_1",
+          "content": "- Analyzed competition and the client’s needs before creating mockups",
+          "className": ""
+        },
+        {
+          "key": "d0_2",
+          "content": "- Developed multiple iterations based on Google’s Material Design",
+          "className": ""
+        }
+      ],
+      "fullContent":{
+        "fullTitle": "Website Designer & Developer",
+        "content": {
+          "client": "Various Websites",
+          "location": "Reading, PA",
+          "text": "Since I’ve returned from my adventure in Palau, I’ve had to face the reality of applying to jobs. However, this did not take up all of my time and I found myself stuck with a lot of free time.\n\nThat free time ended up being used to explore a lot of the aspects of front-end design and development. I was messing around with ReactJS when I started thinking about making a personal website. I had the (what I think to be very funny) idea to recreate my PDF resume as if it was opened in Chrome, but I wanted to make it interactive. I realized that, because of its heavy use of components, ReactJS would be the perfect tool to use for this project. My life began to compose itself of job applications, front-end development, and my daily routine of sleeping, eating, and singing.\n\nA few weeks later, I overheard a family-friend talking about his Agriculture Consulting company.  Out of curiosity, I asked if they had a website, and he said (very hesitantly) that they had a site created through GoDaddy’s website builder. He started to explain that most of his clients tend to be living in very rural areas, and don’t use the computer that much, so he hasn’t had the need to invest in a better site. However, he said it would be nice for his larger more business-oriented clients, or for new clients who are searching online.\n\nWe started talking to about his competition, and he started listing a few companies and sent me their websites. I tried opening them in my phone but none of them were mobile-friendly. I knew instantly that there was an opportunity here.\n\nAs we started talking more, I realized that I had the chance to share my talents with him, and save him a bunch of money that other developers would probably charge.\n\nAbout a month later, I found myself working on websites for a podcast, a camp reunion, a fantasy football game, and of course, the Agriculture Consulting company. While it’s nothing official, I’ve stumbled my way into starting a website consulting business.\n\nThe projects that I am working on are still in progress, and therefore I cannot release pictures from most of them, but I have included pictures of the Agriculture Company’s current website, compared to one of the early prototypes delivered to the client.",
+          "categories": [
+            "before",
+            "after"
+          ],
+          "pictures": [
+            {
+              "title": "Old Main Page",
+              "category": "before",
+              "src": "./images/design/freelance/oldmain.png"
+            },
+            {
+              "title": "Old Contact Form",
+              "category": "before",
+              "src": "./images/design/freelance/oldcontact.png"
+            },
+            {
+              "title": "Prototype Header",
+              "category": "after",
+              "src": "./images/design/freelance/newmain.png"
+            },
+            {
+              "title": "Protoype Content",
+              "category": "after",
+              "src": "./images/design/freelance/newcategories.png"
+            },
+            {
+              "title": "Protoype Contact",
+              "category": "after",
+              "src": "./images/design/freelance/newcontact.png"
+            }
+          ]
+        }
+      }
+    },
+    {
       "key": "w0",
       "primary": true,
       "position": "Tech. Consultant",

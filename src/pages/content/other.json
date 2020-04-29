@@ -50,7 +50,7 @@
     },
     {
       "key": "o1",
-      "primary": true,
+      "primary": false,
       "title": "Technical Assistant",
       "location": "Center for Pain Control",
       "date": "Jan – Feb 16",
@@ -103,7 +103,7 @@
     },
     {
       "key": "o2",
-      "primary": true,
+      "primary": false,
       "title": "Mission Trips",
       "location": "Guatemala",
       "date": "Summers 2007-2009",

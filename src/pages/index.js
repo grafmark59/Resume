@@ -173,21 +173,27 @@ class Resume extends Component {
 
             <h2>Technical</h2>
             <Section>
-              <p>
-                UI/UX | Mobile Development <br/>
+                Web Development | UI/UX <br/>
+                Mobile Development <br/>
                 Code Design | Frontend Design <br/>
                 Backend Development
-              </p>
             </Section>
 
             <h2>Programming</h2>
             <Section>
               <p>
+                React Native | AngularJS <br/>
+                ReactJS | Flutter | NodeJS <br/>
+                JavaScript | CSS | HTML | Git <br/>
+                SQL | Ruby on Rails | Ruby <br/>
+                Swift | Python | C | Java
+              </p>
+              {/* <p>
                 Ruby on Rails | Ruby | SQL <br/>
                 Git | HTML | CSS | JavaScript <br/>
                 Swift | C | Python | NodeJS <br/>
                 Java | ReactJS | AngularJS
-              </p>
+              </p> */}
             </Section>
 
             <h2>Business</h2>
@@ -280,7 +286,13 @@ class Resume extends Component {
                }
             </Section>
 
-            <h2>Other Experiences</h2>
+            {/* {{
+              if  {
+                return (<h1>Ayyyy</h1>)
+              }
+
+            }} */}
+            {(otherData.other.filter(object => object.primary).length > 0) && <h2>Other Experiences</h2>}
             <Section>
               {
                 // Loops through the other experiences and creates interactive
@@ -312,8 +324,9 @@ class Resume extends Component {
                     )
                   }
                 )
-               }
+              }
             </Section>
+
           </RightColumn>
         </MainBody>
         <Footing>
