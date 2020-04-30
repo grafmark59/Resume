@@ -34,9 +34,17 @@
           "client": "EnerSys",
           "location": "Reading, PA",
           "link": "https://www.enersys.com/",
-          "text": "I work here I guess.",
-          "categories": [],
-          "pictures": []
+          "text": "Finally, after a long job hunting process, in June of 2018 I found my first official full-time job. Initially, I was brought on as a full-stack web developer that was updating and maintaining older software. I was given a list of bugs and features to solve in the company’s financial tool, and a timeline with which to solve them. What I’ve noticed most while working here is that, while it is a large company, the engineering department is fairly young, and operates kind of like a large start-up. This means that I’ve had the experience of working with different technologies, different coding languages, and a variety of people.\n\nWhile working here, I’ve gotten to work with web stacks and technologies such as AngularJS with a Spring Boot back-end, .NET applications, and ReactJS, all on top of HTML, CSS, and some vanilla JavaScript. Most of this was done in solving bugs or implementing new features which are still being used today. The best feeling while working on these applications was when I implemented a more full search feature for batteries and chargers. It wasn’t *specifically* requested, but the existing dropdown search seemed to be a consistent roadblock that users faced. When I demoed the feature, I remember one of the Managers asking “Will we all have this?” and I was super worried that he felt forced to use it. So I started to say that the feature was optional, and he could still use the old search if he wanted to. He cut me off and said “No this is great. This would save me so much time.” This was awesome because it was an example of where I noticed a small problem and came up with a solution to fix it, and the users noticed it, making it one of the highlights of my first few months.\n\nOver the past year, I’ve been working most with mobile technology. I’ve had some experience coding in Swift and Android, but as the only one working on the projects I was assigned, I’ve been using primarily React Native to develop a few prototype applications. Initially, I was tasked with creating an application that interacted with EnerSys batteries and chargers via BLE, which was both frustrating and extremely satisfying. The timeline and requirements that were given to finish the project were not the best, but the feeling when a user was able to change a charger’s settings on the application and those changes were reflected on the actual charger was one of the happiest moments of me working at EnerSys. Prior to this, apps felt mainly like a virtual thing that users could interact with and maybe store information, but this was actively interacting with tactile devices in the real world.\n\nSince then, I’ve thrown together a few demos mainly used for debugging internally, but the one other substantial app I want to talk about is one that I developed in parallel to a third-party creating a sample dashboard for our IoT devices. It was a major step that I took in starting to better implement animations in my applications. It’s not until you start developing apps that you realize how many small details go into making an app. It’s one of those things that you don’t truly notice how necessary a small loading animation is until it isn’t there. When I started using this app, it just felt real in my hands, not just a mobile PowerPoint. It was especially satisfying when the Director of Engineering pointed out how much he liked my app and said that it had the more modern feel that we were trying to go for. \n\nThat’s where I currently am in mobile development journey, but I hope to grow even more.",
+          "categories": [
+            "enersys"
+          ],
+          "pictures": [
+            {
+              "title": "Logo",
+              "category": "enersys",
+              "src": "./images/work/enersys/logo.png"
+            }
+          ]
         }
       }
     },
@@ -74,14 +82,22 @@
         }
       ],
       "fullContent":{
-        "fullTitle": "Application Engineer",
+        "fullTitle": "Front-End Lead",
         "content": {
           "client": "Index Inc",
           "location": "Remote",
           "link": "",
-          "text": "I work here (remotely) I guess.",
-          "categories": [],
-          "pictures": []
+          "text": "In December of 2018, after I had been working at EnerSys for about 6 months, I was reached out to by Andy, the founder of Index, a company looking to bring businesses and clients together (which is all I can really say without breaking NDA I think?). The team is small: we’re about 5 people with varying levels of experience. When I joined, I quickly became in charge of the mobile app portion of development. They already had a small Flutter prototype app up and running, but after some time with messing around with the development, I decided that it would be best moving forward with React Native, as it has a larger, more flushed out community, and it is where my experience mainly lies. Since then I have recreated most of the functionality that existed in the previous demo, with some better UI practices.\n\nOn top of that, I am also involved in developing the main web application, a full-stack solution currently based on Django, GraphQL, and ReactJS. We’ve been jumping around with technologies pretty rapidly, attempting to find where we can best create the foundation of the multi-vendor platform that we are looking for. This has been a challenge for all of us, as most of us work on this project on the side, but recently (mainly due to the quarantine going on in early 2020) we have been able to find a stride and we have been making more development progress over the past few months. I hope to be able to write more about this project soon!",
+          "categories": [
+            "index"
+          ],
+          "pictures": [
+            {
+              "title": "Logo",
+              "category": "index",
+              "src": "./images/work/index/logo.png"
+            }
+          ]
         }
       }
     },
